@@ -1,0 +1,53 @@
+*,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans'), local('PTSans-Regular'), url(http://fonts.gstatic.com/s/ptsans/v8/oOt0DNfso2UXZt7DYCiN2gLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('PT Sans Bold'), local('PTSans-Bold'), url(http://fonts.gstatic.com/s/ptsans/v8/g46X4VH_KHOWAAa-HpnGPr3hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
+}
+body {
+  position: relative;
+  text-transform: uppercase;
+  text-align: center;
+  font: 400 14px / 21px 'PT Sans', sans-serif;
+  color: #333;
+}
+h1,
+h2,
+h3 {
+  color: #000;
+}
+h1,
+h2 {
+  font: 700 18px / 1 'PT Sans', sans-serif;
+}
+a {
+  text-decoration: none;
+}
