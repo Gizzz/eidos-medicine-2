@@ -1,0 +1,110 @@
+// =====================
+// vars
+// =====================
+
+@color-blue: #81b3d2;
+@color-blue-hover: #669ec0;
+@color-blue-active: #5496bd;
+
+@font-family-main: 'PT Sans', sans-serif;
+@font-header: 700 18px / 1 @font-family-main;
+
+// =====================
+// resets, overridings
+// =====================
+
+*,
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+// =====================
+// font imports
+// =====================
+
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans'), local('PTSans-Regular'), url(http://fonts.gstatic.com/s/ptsans/v8/oOt0DNfso2UXZt7DYCiN2gLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('PT Sans Bold'), local('PTSans-Bold'), url(http://fonts.gstatic.com/s/ptsans/v8/g46X4VH_KHOWAAa-HpnGPr3hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
+}
+
+// =====================
+// common
+// =====================
+
+body {
+  position: relative;
+  text-transform: uppercase;
+  text-align: center;
+  font: 400 14px / 21px @font-family-main;
+  color: #333;
+}
+
+h1, h2, h3 {
+  color: #000;
+}
+
+h1, h2 {
+  font: @font-header;
+}
+
+a {
+  text-decoration: none;
+}
+
+// Clearfix
+//
+// For modern browsers
+// 1. The space content is one way to avoid an Opera bug when the
+//    contenteditable attribute is included anywhere else in the document.
+//    Otherwise it causes space to appear at the top and bottom of elements
+//    that are clearfixed.
+// 2. The use of `table` rather than `block` is only necessary if using
+//    `:before` to contain the top-margins of child elements.
+//
+// Source: http://nicolasgallagher.com/micro-clearfix-hack/
+
+.clearfix() {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+.make-center(@element-width) {
+  margin-left: auto;
+  margin-right: auto;
+  width: @element-width;
+}
+
+// =====================
+// block specific
+// =====================
+
