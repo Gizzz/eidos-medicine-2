@@ -2,12 +2,12 @@
 // vars
 // =====================
 
-@color-blue: #81b3d2;
-@color-blue-hover: #669ec0;
-@color-blue-active: #5496bd;
+@color-blue: #2D8FCE;
+//@color-blue-hover: #669ec0;
+//@color-blue-active: #5496bd;
 
-@font-family-main: 'PT Sans', sans-serif;
-@font-header: 700 18px / 1 @font-family-main;
+//@font-family-main: 'PT Sans', sans-serif;
+//@font-header: 700 18px / 1 @font-family-main;
 
 // =====================
 // resets, overridings
@@ -37,17 +37,24 @@ html {
 // =====================
 
 @font-face {
-  font-family: 'PT Sans';
+  font-family: 'Proxima Nova';
   font-style: normal;
   font-weight: 400;
-  src: local('PT Sans'), local('PTSans-Regular'), url(http://fonts.gstatic.com/s/ptsans/v8/oOt0DNfso2UXZt7DYCiN2gLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+  src: url(../fonts/Proxima-Nova-Regular.woff) format('woff');
 }
 
 @font-face {
-  font-family: 'PT Sans';
+  font-family: 'Proxima Nova';
+  font-style: normal;
+  font-weight: 600;
+  src: url(../fonts/Proxima-Nova-Semibold.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
   font-style: normal;
   font-weight: 700;
-  src: local('PT Sans Bold'), local('PTSans-Bold'), url(http://fonts.gstatic.com/s/ptsans/v8/g46X4VH_KHOWAAa-HpnGPr3hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
+  src: url(../fonts/Proxima-Nova-Bold.woff) format('woff');
 }
 
 // =====================
@@ -56,18 +63,8 @@ html {
 
 body {
   position: relative;
-  text-transform: uppercase;
-  text-align: center;
-  font: 400 14px / 21px @font-family-main;
-  color: #333;
-}
-
-h1, h2, h3 {
-  color: #000;
-}
-
-h1, h2 {
-  font: @font-header;
+  font: 400 18px / 22px 'Proxima Nova';
+  color: #fff;
 }
 
 a {
@@ -104,7 +101,162 @@ a {
   width: @element-width;
 }
 
+.wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1074px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.row {
+  .clearfix();
+}
+
+.col {
+  float: left;
+  width: 50%;
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+  padding: 16px 27px 14px;
+  background: @color-blue;
+  color: #fff;
+  font: 600 22px / 24px 'Proxima Nova';
+  text-align: center;
+  text-transform: uppercase;
+
+  &.transparent {
+    background: transparent;
+    border: 3px solid white;
+    transition: background .1s, color .1s;
+
+    &:hover {
+      background: #fff;
+      border-color: #fff;
+      color: @color-blue;
+      box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.2);
+    }
+  }
+}
+
 // =====================
 // block specific
 // =====================
 
+header.page {
+  height: 160px;
+}
+
+.billboard {
+  padding-top: 54px;
+  padding-bottom: 70px;
+  background: url(../img/bg-billboard.png);
+
+  .white-bar {
+    height: 13px;
+    background: #fff;
+  }
+
+  h1 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 40px;
+  }
+
+  p {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+  }
+
+  .footer {
+    .clearfix();
+
+    position: relative;
+    margin-top: 50px;
+
+
+
+    .product-labels {
+      .label {
+        position: absolute;
+        right: 0;
+        bottom: 16px;
+        width: 228px;
+        height: 32px;
+
+        &.lpr {
+          background: url(../img/label-lpr.svg);
+        }
+      }
+    }
+  }
+
+  .slider-products {
+    @slider-height: 592px;
+    @translate-step: 30%;
+
+    position: relative;
+    width: 100%;
+    height: @slider-height;
+
+    .bg-shadow {
+      width: 100%;
+      height: @slider-height;
+      background: url(../img/bg-product-shadow.png) no-repeat 50% 50%;
+    }
+
+    .product {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: @slider-height;
+      background: url(../img/product-lpr.png) no-repeat 50% 50%;
+
+      animation-duration: .5s;
+      animation-fill-mode: forwards;
+      //animation-iteration-count: infinite;
+
+      &.brs {
+        animation-name: slide-out;
+      }
+
+      &.lpr {
+        opacity: 0;
+        animation-name: slide-in;
+        animation-delay: .25s;
+      }
+    }
+
+    @keyframes slide-out {
+      0% {
+        opacity: 1;
+      }
+
+      100% {
+        opacity: 0;
+        transform: translateX(-@translate-step) scale(.9);
+      }
+    }
+
+    @keyframes slide-in {
+      0% {
+        opacity: 0;
+        transform: translateX(@translate-step) scale(.9);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateX(0%) scale(1);
+      }
+
+    }
+  }
+}
