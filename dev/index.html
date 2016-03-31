@@ -38,6 +38,7 @@
 								<a href="#" class="btn transparent">Узнать больше</a>
 								<div class="product-labels">
 									<div class="label brs"></div>
+									<div class="label evs"></div>
 									<div class="label lpr"></div>
 								</div>
 							</div>
@@ -45,10 +46,9 @@
 						<div class="col">
 							<div class="slider-products">
 								<div class="bg-shadow"></div>
-								<div class="product brs">
-								</div>
-								<div class="product lpr">
-								</div>
+								<div class="product brs"></div>
+								<div class="product evs"></div>
+								<div class="product lpr"></div>
 							</div>
 						</div>
 					</div>
@@ -60,46 +60,8 @@
 		</footer>
 
 		<!-- build:js js/bundle.js -->
-		<!--<script src="js/app.js"></script>-->
+		<script src="js/app.js"></script>
 		<!-- endbuild -->
-
-		<script>
-			"use strict";
-
-			function initSlider() {
-				var sliderElem = document.querySelector(".slider-products");
-				var labels = document.querySelectorAll(".product-labels .label");
-
-				function setActiveLabel() {
-					var currentActiveLabel = labels.querySelector(".active");
-					var newActiveLabel;
-
-					if (!currentActiveLabel) {
-						newActiveLabel = labels[0];
-					} else {
-						var indexOfCurrentActiveLabel = labels.indexOf(currentActiveLabel);
-						var isLastLabel = indexOfCurrentActiveLabel !== labels.length - 1;
-
-						if (isLastLabel) {
-							newActiveLabel = labels[indexOfCurrentActiveLabel + 1]
-						} else {
-							newActiveLabel = labels[0];
-						}
-					}
-
-
-					var productsChangeInterval = 500;
-					setTimeout(function () {
-
-						// todo
-
-					}, productsChangeInterval)
-				}
-
-			}
-
-			window.onload = initSlider;
-		</script>
 	</body>
 
 </html>
