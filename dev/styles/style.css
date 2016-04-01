@@ -38,10 +38,16 @@ html {
   font-weight: 700;
   src: url(../fonts/Proxima-Nova-Bold.woff) format('woff');
 }
+@font-face {
+  font-family: 'Proxima Nova';
+  font-style: normal;
+  font-weight: 800;
+  src: url(../fonts/Proxima-Nova-Extrabold.woff) format('woff');
+}
 body {
   position: relative;
   font: 400 18px / 22px 'Proxima Nova';
-  color: #fff;
+  color: #4D4D4D;
 }
 a {
   text-decoration: none;
@@ -90,54 +96,55 @@ a {
 header.page {
   height: 160px;
 }
-.billboard {
+section.billboard {
   padding-top: 54px;
   padding-bottom: 70px;
-  background: url(../img/bg-billboard.png);
+  color: #ffffff;
+  background: url(../img/bg-section-billboard.png);
 }
-.billboard .white-bar {
+section.billboard .bar {
   height: 13px;
   background: #fff;
 }
-.billboard h1 {
+section.billboard h1 {
   margin-top: 40px;
   margin-bottom: 40px;
   font-size: 38px;
   font-weight: 700;
   line-height: 40px;
 }
-.billboard p {
+section.billboard p {
   margin-top: 20px;
   font-size: 18px;
   line-height: 22px;
   font-weight: 400;
 }
-.billboard .footer {
+section.billboard .footer {
   position: relative;
   margin-top: 50px;
 }
-.billboard .footer:before,
-.billboard .footer:after {
+section.billboard .footer:before,
+section.billboard .footer:after {
   content: " ";
   display: table;
 }
-.billboard .footer:after {
+section.billboard .footer:after {
   clear: both;
 }
-.billboard .footer .product-labels .label {
+section.billboard .footer .product-labels .label {
   position: absolute;
   right: 0;
   bottom: 16px;
   height: 32px;
   opacity: 0;
 }
-.billboard .footer .product-labels .label.fade-in {
+section.billboard .footer .product-labels .label.fade-in {
   animation-name: fade-in;
   animation-duration: .5s;
   animation-delay: .25s;
   animation-fill-mode: forwards;
 }
-.billboard .footer .product-labels .label.fade-out {
+section.billboard .footer .product-labels .label.fade-out {
   animation-name: fade-out;
   animation-duration: .5s;
   animation-fill-mode: forwards;
@@ -158,29 +165,45 @@ header.page {
     opacity: 0;
   }
 }
-.billboard .footer .product-labels .label.brs {
+section.billboard .footer .product-labels .label.brs {
   width: 234px;
   background: url(../img/label-brs.svg);
 }
-.billboard .footer .product-labels .label.evs {
+section.billboard .footer .product-labels .label.evs {
   width: 232px;
   background: url(../img/label-evs.svg);
 }
-.billboard .footer .product-labels .label.lpr {
+section.billboard .footer .product-labels .label.ghs {
+  width: 242px;
+  background: url(../img/label-ghs.svg);
+}
+section.billboard .footer .product-labels .label.gsr {
+  width: 237px;
+  background: url(../img/label-gsr.svg);
+}
+section.billboard .footer .product-labels .label.lpr {
   width: 228px;
   background: url(../img/label-lpr.svg);
 }
-.billboard .slider-products {
+section.billboard .footer .product-labels .label.ran {
+  width: 239px;
+  background: url(../img/label-ran.svg);
+}
+section.billboard .footer .product-labels .label.stm {
+  width: 238px;
+  background: url(../img/label-stm.svg);
+}
+section.billboard .product-pics {
   position: relative;
   width: 100%;
   height: 592px;
 }
-.billboard .slider-products .bg-shadow {
+section.billboard .product-pics .bg-shadow {
   width: 100%;
   height: 592px;
   background: url(../img/bg-product-shadow.png) no-repeat 50% 50%;
 }
-.billboard .slider-products .product {
+section.billboard .product-pics .pic {
   position: absolute;
   top: 0;
   width: 100%;
@@ -189,25 +212,16 @@ header.page {
   animation-duration: .5s;
   animation-fill-mode: forwards;
 }
-.billboard .slider-products .product.slide-in {
+section.billboard .product-pics .pic.slide-in {
   animation-name: slide-in;
   animation-duration: .5s;
   animation-delay: .25s;
   animation-fill-mode: forwards;
 }
-.billboard .slider-products .product.slide-out {
+section.billboard .product-pics .pic.slide-out {
   animation-name: slide-out;
   animation-duration: .5s;
   animation-fill-mode: forwards;
-}
-.billboard .slider-products .product.brs {
-  background: url(../img/product-brs.png) no-repeat 50% 50%;
-}
-.billboard .slider-products .product.evs {
-  background: url(../img/product-evs.png) no-repeat 50% 50%;
-}
-.billboard .slider-products .product.lpr {
-  background: url(../img/product-lpr.png) no-repeat 50% 50%;
 }
 @keyframes slide-out {
   0% {
@@ -227,4 +241,82 @@ header.page {
     opacity: 1;
     transform: translateX(0%) scale(1);
   }
+}
+section.billboard .product-pics .pic.brs {
+  background: url(../img/product-brs.png) no-repeat 50% 50%;
+}
+section.billboard .product-pics .pic.evs {
+  background: url(../img/product-evs.png) no-repeat 50% 50%;
+}
+section.billboard .product-pics .pic.ghs {
+  background: url(../img/product-ghs.png) no-repeat 50% 50%;
+}
+section.billboard .product-pics .pic.gsr {
+  background: url(../img/product-gsr.png) no-repeat 50% 50%;
+}
+section.billboard .product-pics .pic.lpr {
+  background: url(../img/product-lpr.png) no-repeat 50% 50%;
+}
+section.billboard .product-pics .pic.ran {
+  background: url(../img/product-ran.png) no-repeat 50% 50%;
+}
+section.billboard .product-pics .pic.stm {
+  background: url(../img/product-stm.png) no-repeat 50% 50%;
+}
+section.numbers {
+  padding-top: 54px;
+  padding-bottom: 69px;
+  background: url(../img/bg-section-numbers.png);
+}
+section.numbers .col.digits {
+  color: #2D8FCE;
+}
+section.numbers .col.digits .row:nth-child(1) {
+  height: 60px;
+}
+section.numbers .col.digits .row:nth-child(2) {
+  height: 124px;
+}
+section.numbers .col.digits .row:nth-child(3),
+section.numbers .col.digits .row:nth-child(4) {
+  height: 127px;
+}
+section.numbers .col.digits .row .num {
+  font-size: 90px;
+  line-height: 65px;
+  font-weight: 800;
+}
+section.numbers .col.digits .row .num.pull-ones {
+  position: relative;
+  left: -10px;
+}
+section.numbers .col.digits .row .num.pull-fives {
+  position: relative;
+  left: -5px;
+}
+section.numbers .col.digits .row .descr {
+  font-size: 18px;
+  line-height: 17px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+section.numbers .col.text .bar {
+  margin-bottom: 40px;
+  height: 13px;
+  background: #2D8FCE;
+}
+section.numbers .col.text h1 {
+  margin-top: 40px;
+  margin-bottom: 44px;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 40px;
+  color: #2D8FCE;
+}
+section.numbers .col.text p {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
 }

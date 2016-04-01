@@ -57,6 +57,13 @@ html {
   src: url(../fonts/Proxima-Nova-Bold.woff) format('woff');
 }
 
+@font-face {
+  font-family: 'Proxima Nova';
+  font-style: normal;
+  font-weight: 800;
+  src: url(../fonts/Proxima-Nova-Extrabold.woff) format('woff');
+}
+
 // =====================
 // common
 // =====================
@@ -64,7 +71,7 @@ html {
 body {
   position: relative;
   font: 400 18px / 22px 'Proxima Nova';
-  color: #fff;
+  color: #4D4D4D;
 }
 
 a {
@@ -151,12 +158,13 @@ header.page {
   height: 160px;
 }
 
-.billboard {
+section.billboard {
   padding-top: 54px;
   padding-bottom: 70px;
-  background: url(../img/bg-billboard.png);
+  color: #ffffff;
+  background: url(../img/bg-section-billboard.png);
 
-  .white-bar {
+  .bar {
     height: 13px;
     background: #fff;
   }
@@ -181,8 +189,6 @@ header.page {
 
     position: relative;
     margin-top: 50px;
-
-
 
     .product-labels {
       .label {
@@ -235,15 +241,35 @@ header.page {
           background: url(../img/label-evs.svg);
         }
 
+        &.ghs {
+          width: 242px;
+          background: url(../img/label-ghs.svg);
+        }
+
+        &.gsr {
+          width: 237px;
+          background: url(../img/label-gsr.svg);
+        }
+
         &.lpr {
           width: 228px;
           background: url(../img/label-lpr.svg);
+        }
+
+        &.ran {
+          width: 239px;
+          background: url(../img/label-ran.svg);
+        }
+
+        &.stm {
+          width: 238px;
+          background: url(../img/label-stm.svg);
         }
       }
     }
   }
 
-  .slider-products {
+  .product-pics {
     @slider-height: 592px;
     @translate-step: 30%;
 
@@ -257,7 +283,7 @@ header.page {
       background: url(../img/bg-product-shadow.png) no-repeat 50% 50%;
     }
 
-    .product {
+    .pic {
       position: absolute;
       top: 0;
       width: 100%;
@@ -280,6 +306,29 @@ header.page {
         animation-fill-mode: forwards;
       }
 
+      @keyframes slide-out {
+        0% {
+          opacity: 1;
+        }
+
+        100% {
+          opacity: 0;
+          transform: translateX(-@translate-step) scale(.9);
+        }
+      }
+
+      @keyframes slide-in {
+        0% {
+          opacity: 0;
+          transform: translateX(@translate-step) scale(.9);
+        }
+
+        100% {
+          opacity: 1;
+          transform: translateX(0%) scale(1);
+        }
+      }
+
       &.brs {
         background: url(../img/product-brs.png) no-repeat 50% 50%;
       }
@@ -288,32 +337,98 @@ header.page {
         background: url(../img/product-evs.png) no-repeat 50% 50%;
       }
 
+      &.ghs {
+        background: url(../img/product-ghs.png) no-repeat 50% 50%;
+      }
+
+      &.gsr {
+        background: url(../img/product-gsr.png) no-repeat 50% 50%;
+      }
+
       &.lpr {
         background: url(../img/product-lpr.png) no-repeat 50% 50%;
       }
-    }
 
-    @keyframes slide-out {
-      0% {
-        opacity: 1;
+      &.ran {
+        background: url(../img/product-ran.png) no-repeat 50% 50%;
       }
 
-      100% {
-        opacity: 0;
-        transform: translateX(-@translate-step) scale(.9);
+      &.stm {
+        background: url(../img/product-stm.png) no-repeat 50% 50%;
       }
     }
+  }
+}
 
-    @keyframes slide-in {
-      0% {
-        opacity: 0;
-        transform: translateX(@translate-step) scale(.9);
+section.numbers {
+  padding-top: 54px;
+  padding-bottom: 69px;
+  background: url(../img/bg-section-numbers.png);
+
+  .col.digits {
+    color: @color-blue;
+
+    .row {
+      &:nth-child(1) {
+        height: 60px;
       }
 
-      100% {
-        opacity: 1;
-        transform: translateX(0%) scale(1);
+      &:nth-child(2) {
+        height: 124px;
       }
+
+      &:nth-child(3),
+      &:nth-child(4) {
+        height: 127px;
+      }
+
+      .num {
+        font-size: 90px;
+        line-height: 65px;
+        font-weight: 800;
+
+        &.pull-ones {
+          position: relative;
+          left: -10px;
+        }
+
+        &.pull-fives {
+          position: relative;
+          left: -5px;
+        }
+      }
+
+      .descr {
+        font-size: 18px;
+        line-height: 17px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: .05em;
+      }
+    }
+  }
+
+  .col.text {
+    .bar {
+      margin-bottom: 40px;
+      height: 13px;
+      background: @color-blue;
+    }
+
+    h1 {
+      margin-top: 40px;
+      margin-bottom: 44px;
+      font-size: 38px;
+      font-weight: 700;
+      line-height: 40px;
+      color: @color-blue;
+    }
+
+    p {
+      margin-top: 20px;
+      font-size: 18px;
+      line-height: 22px;
+      font-weight: 400;
     }
   }
 }

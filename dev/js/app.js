@@ -1,23 +1,22 @@
 "use strict";
 
 function initSlider() {
-	var products = document.querySelectorAll(".slider-products .product");
 	var labels = document.querySelectorAll(".product-labels .label");
+	var pics = document.querySelectorAll(".product-pics .pic");
 
 	labels[0].classList.add("fade-in");
-	products[0].classList.add("slide-in");
+	pics[0].classList.add("slide-in");
 	var currentSlideIndex = 0;
 
-	var animationInterval = 3000;
+	var animationInterval = 2000;
 	setInterval(function () {
 		labels[currentSlideIndex].classList.remove("fade-in");
 		labels[currentSlideIndex].classList.add("fade-out");
 
-		products[currentSlideIndex].classList.remove("slide-in");
-		products[currentSlideIndex].classList.add("slide-out");
+		pics[currentSlideIndex].classList.remove("slide-in");
+		pics[currentSlideIndex].classList.add("slide-out");
 
 		currentSlideIndex += 1;
-
 		if (currentSlideIndex + 1 > labels.length) {
 			currentSlideIndex = 0;
 		}
@@ -25,8 +24,8 @@ function initSlider() {
 		labels[currentSlideIndex].classList.remove("fade-out");
 		labels[currentSlideIndex].classList.add("fade-in");
 
-		products[currentSlideIndex].classList.remove("slide-out");
-		products[currentSlideIndex].classList.add("slide-in");
+		pics[currentSlideIndex].classList.remove("slide-out");
+		pics[currentSlideIndex].classList.add("slide-in");
 	}, animationInterval);
 }
 
