@@ -162,7 +162,7 @@ section.billboard {
   padding-top: 54px;
   padding-bottom: 70px;
   color: #ffffff;
-  background: url(../img/bg-section-billboard.png);
+  background: url(../img/bg-cubes-blue.png);
 
   .bar {
     height: 13px;
@@ -363,7 +363,7 @@ section.billboard {
 section.numbers {
   padding-top: 54px;
   padding-bottom: 69px;
-  background: url(../img/bg-section-numbers.png);
+  background: url(../img/bg-cubes-gray.png);
 
   .col.digits {
     color: @color-blue;
@@ -426,9 +426,159 @@ section.numbers {
 
     p {
       margin-top: 20px;
-      font-size: 18px;
-      line-height: 22px;
-      font-weight: 400;
+    }
+  }
+}
+
+body.product.lpr {
+  section.billboard {
+    padding-top: 54px;
+    padding-bottom: 70px;
+    color: #ffffff;
+    background: url(../img/bg-cubes-blue.png);
+
+    .col:nth-child(1) {
+      .bar {
+        height: 13px;
+        background: #fff;
+      }
+
+      h1 {
+        margin-top: 40px;
+        margin-bottom: 25px;
+        font-size: 38px;
+        font-weight: 700;
+        line-height: 40px;
+      }
+
+      .label {
+        width: 485px;
+        height: 110px;
+        background: url(../img/label-lpr.svg) no-repeat 50% 50%;
+        background-size: 485px 110px;
+      }
+
+      h2 {
+        margin-top: 22px;
+        font-size: 29px;
+        line-height: 28px;
+      }
+
+      .btn {
+        margin-top: 51px;
+        width: 100%;
+      }
+    }
+
+    .col:nth-child(2) {
+      .product-pics {
+        @slider-height: 592px;
+        @translate-step: 30%;
+
+        position: relative;
+        width: 100%;
+        height: @slider-height;
+
+        .image {
+          position: absolute;
+          top: 0;
+          width: 100%;
+          height: @slider-height;
+          background: url(../img/product-lpr.png) no-repeat 50% 50%;
+        }
+      }
+    }
+  }
+
+  section.descr {
+    padding-top: 65px;
+    padding-bottom: 55px;
+
+    .col:nth-child(1) {
+      ul {
+        margin-top: 5px;
+        border: 13px solid @color-blue;
+        width: 476px;
+        padding: 53px 60px;
+
+        li {
+          position: relative;
+
+          &:before {
+            content: "—";
+            position: absolute;
+            left: -22px;
+            top: -1px;
+          }
+
+          &:not(:first-child) {
+            margin-top: 27px;
+          }
+        }
+      }
+    }
+
+    .col:nth-child(2) {
+      p:not(:first-child) {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  section.product-versions {
+    padding-top: 34px;
+    padding-bottom: 43px;
+    background: url(../img/bg-cubes-gray.png);
+
+    .col.version,
+    .row.version {
+      .image {
+        height: 566px;
+
+        background: green;
+        border: 5px solid red;
+      }
+
+      h1 {
+        display: inline-block;
+        margin-top: 33px;
+        border-top: 13px solid @color-blue;
+        padding-top: 42px;
+        font-size: 38px;
+        font-weight: 700;
+        line-height: 40px;
+        color: @color-blue;
+      }
+
+      p {
+        margin-top: 20px;
+        width: 475px;
+      }
+    }
+
+    .row.version {
+      &:not(:first-child) {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  section.modules {
+    padding-top: 70px;
+
+    h1 {
+      display: inline-block;
+      border-top: 13px solid @color-blue;
+      padding-top: 42px;
+      font-size: 38px;
+      font-weight: 700;
+      line-height: 40px;
+      color: @color-blue;
+    }
+
+    p {
+      margin-top: 20px;
+      width: 475px;
     }
   }
 }
