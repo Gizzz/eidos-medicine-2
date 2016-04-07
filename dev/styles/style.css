@@ -589,3 +589,65 @@ body.product.brs section.modules .row:nth-of-type(1) .col:nth-of-type(2) .module
 body.product.brs section.modules .row:nth-of-type(2) .col:nth-of-type(1) .module:nth-of-type(1) .image {
   background: url(../img/product-bronch_learn-module-5.jpg) no-repeat 50% 50%;
 }
+body.product.ghs section.billboard .col:nth-child(1) .label {
+  background: url(../img/label-ghs.svg) no-repeat 50% 50%;
+  background-size: 485px 110px;
+}
+body.product.ghs section.billboard .col:nth-child(2) .product-pic .image {
+  background: url(../img/ghs_standard.png) no-repeat 50% 50%;
+}
+body.product.ghs section.product-versions .row .col.version.basic .image {
+  background: url(../img/ghs_basic.png) no-repeat 50% 50%;
+}
+body.product.ghs section.product-versions .row .col.version.standard .image {
+  background: url(../img/ghs_standard.png) no-repeat 50% 50%;
+}
+body.product.ghs section.modules .row:nth-of-type(1) .col:nth-of-type(1) .module:nth-of-type(1) .image {
+  background: url(../img/product-hyst_learn-module-1.jpg) no-repeat 50% 50%;
+}
+body.product.ghs section.modules .row:nth-of-type(1) .col:nth-of-type(1) .module:nth-of-type(2) .image {
+  background: url(../img/product-hyst_learn-module-2.jpg) no-repeat 50% 50%;
+}
+body.product.ghs section.modules .row:nth-of-type(1) .col:nth-of-type(2) .module:nth-of-type(1) .image {
+  background: url(../img/product-hyst_learn-module-3.jpg) no-repeat 50% 50%;
+}
+body.product.ghs section.modules .row:nth-of-type(1) .col:nth-of-type(2) .module:nth-of-type(2) .image {
+  background: url(../img/product-hyst_learn-module-4.jpg) no-repeat 50% 50%;
+}
+body.product.ghs section.modules .row:nth-of-type(2) .col:nth-of-type(1) .module:nth-of-type(1) .image {
+  background: url(../img/product-hyst_learn-module-5.jpg) no-repeat 50% 50%;
+}
+body.product.gsr section.billboard .col:nth-child(1) .label {
+  background: url(../img/label-gsr.svg) no-repeat 50% 50%;
+  background-size: 485px 110px;
+}
+body.product.gsr section.billboard .col:nth-child(2) .product-pic .image {
+  background: url(../img/gsr_standard.png) no-repeat 50% 50%;
+}
+body.product.gsr section.product-versions .row .col.version.standard .image {
+  background: url(../img/gsr_standard.png) no-repeat 50% 50%;
+}
+body.product.gsr section.modules .row:nth-of-type(1) .col:nth-of-type(1) .module:nth-of-type(1) .image {
+  background: url(../img/product-endo_learn-module-1.jpg) no-repeat 50% 50%;
+}
+body.product.gsr section.modules .row:nth-of-type(1) .col:nth-of-type(1) .module:nth-of-type(2) .image {
+  background: url(../img/product-endo_learn-module-2.jpg) no-repeat 50% 50%;
+}
+body.product.gsr section.modules .row:nth-of-type(1) .col:nth-of-type(2) .module:nth-of-type(1) .image {
+  background: url(../img/product-endo_learn-module-3.jpg) no-repeat 50% 50%;
+}
+body.product.gsr section.modules .row:nth-of-type(1) .col:nth-of-type(2) .module:nth-of-type(2) .image {
+  background: url(../img/product-endo_learn-module-4.jpg) no-repeat 50% 50%;
+}
+body.product.gsr section.modules .row:nth-of-type(2) .col:nth-of-type(1) .module:nth-of-type(1) .image {
+  background: url(../img/product-endo_learn-module-5.jpg) no-repeat 50% 50%;
+}
+body.product.gsr section.modules .row:nth-of-type(2) .col:nth-of-type(1) .module:nth-of-type(2) .image {
+  background: url(../img/product-endo_learn-module-6.jpg) no-repeat 50% 50%;
+}
+body.product.gsr section.modules .row:nth-of-type(2) .col:nth-of-type(2) .module:nth-of-type(1) .image {
+  background: url(../img/product-endo_learn-module-7.jpg) no-repeat 50% 50%;
+}
+body.product.gsr section.modules .row:nth-of-type(2) .col:nth-of-type(2) .module:nth-of-type(2) .image {
+  background: url(../img/product-endo_learn-module-8.jpg) no-repeat 50% 50%;
+}
