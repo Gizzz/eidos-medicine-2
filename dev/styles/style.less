@@ -330,31 +330,31 @@ section.billboard {
       }
 
       &.brs {
-        background: url(../img/product-brs.png) no-repeat 50% 50%;
+        background: url(../img/brs_standard.png) no-repeat 50% 50%;
       }
 
       &.evs {
-        background: url(../img/product-evs.png) no-repeat 50% 50%;
+        background: url(../img/evs_standard.png) no-repeat 50% 50%;
       }
 
       &.ghs {
-        background: url(../img/product-ghs.png) no-repeat 50% 50%;
+        background: url(../img/ghs_standard.png) no-repeat 50% 50%;
       }
 
       &.gsr {
-        background: url(../img/product-gsr.png) no-repeat 50% 50%;
+        background: url(../img/gsr_standard.png) no-repeat 50% 50%;
       }
 
       &.lpr {
-        background: url(../img/product-lpr.png) no-repeat 50% 50%;
+        background: url(../img/lpr_standard.png) no-repeat 50% 50%;
       }
 
       &.ran {
-        background: url(../img/product-ran.png) no-repeat 50% 50%;
+        background: url(../img/ran_standard.png) no-repeat 50% 50%;
       }
 
       &.stm {
-        background: url(../img/product-stm.png) no-repeat 50% 50%;
+        background: url(../img/stm_standard.png) no-repeat 50% 50%;
       }
     }
   }
@@ -430,7 +430,7 @@ section.numbers {
   }
 }
 
-body.product.lpr {
+body.product {
   section.billboard {
     padding-top: 54px;
     padding-bottom: 70px;
@@ -454,8 +454,6 @@ body.product.lpr {
       .label {
         width: 485px;
         height: 110px;
-        background: url(../img/label-lpr.svg) no-repeat 50% 50%;
-        background-size: 485px 110px;
       }
 
       h2 {
@@ -466,12 +464,12 @@ body.product.lpr {
 
       .btn {
         margin-top: 51px;
-        width: 100%;
+        width: 476px;
       }
     }
 
     .col:nth-child(2) {
-      .product-pics {
+      .product-pic {
         @slider-height: 592px;
         @translate-step: 30%;
 
@@ -479,12 +477,18 @@ body.product.lpr {
         width: 100%;
         height: @slider-height;
 
+        .bg-shadow {
+          width: 100%;
+          height: @slider-height;
+          background: url(../img/bg-product-shadow.png) no-repeat 50% 50%;
+        }
+
         .image {
           position: absolute;
           top: 0;
           width: 100%;
           height: @slider-height;
-          background: url(../img/product-lpr.png) no-repeat 50% 50%;
+          background: url(../img/lpr_standard.png) no-repeat 50% 50%;
         }
       }
     }
@@ -530,13 +534,26 @@ body.product.lpr {
     padding-bottom: 43px;
     background: url(../img/bg-cubes-gray.png);
 
-    .col.version,
-    .row.version {
+    .row:not(:first-child) {
+      margin-top: 20px;
+    }
+
+    .col.version {
       .image {
         height: 566px;
+      }
 
-        background: green;
-        border: 5px solid red;
+      &.basic .image {
+        background: url(../img/lpr_basic.png) no-repeat 50% 50%;
+      }
+
+      &.standard .image {
+        background: url(../img/lpr_standard.png) no-repeat 50% 50%;
+        background-size: 415px 566px;
+      }
+
+      &.hybrid .image {
+        background: url(../img/lpr_hybrid.png) no-repeat 50% 50%;
       }
 
       h1 {
@@ -555,12 +572,6 @@ body.product.lpr {
         width: 475px;
       }
     }
-
-    .row.version {
-      &:not(:first-child) {
-        margin-top: 20px;
-      }
-    }
   }
 
   section.modules {
@@ -577,8 +588,272 @@ body.product.lpr {
     }
 
     p {
-      margin-top: 20px;
+      margin-top: 38px;
       width: 475px;
+    }
+
+    .row {
+      margin-top: 65px;
+
+      .module {
+        float: left;
+        width: 50%;
+
+        .image {
+          width: 210px;
+          height: 210px;
+          background: #000;
+        }
+
+        h3 {
+          margin-top: 16px;
+          padding-right: 25px;
+          font-size: 17px;
+          line-height: 19px;
+          color: #000;
+        }
+
+        p {
+          margin-top: 16px;
+          width: 100%;
+          padding-right: 35px;
+          font-size: 15px;
+          line-height: 18px;
+        }
+      }
+    }
+
+    .row:nth-of-type(1) {
+      .col:nth-of-type(1) {
+        .module:nth-of-type(1) .image {
+          background: url(../img/laparo_module_1.png) no-repeat 50% 50%;
+        }
+
+        .module:nth-of-type(2) .image {
+          background: url(../img/laparo_module_2.png) no-repeat 50% 50%;
+        }
+      }
+
+      .col:nth-of-type(2) {
+        .module:nth-of-type(1) .image {
+          background: url(../img/laparo_module_3.png) no-repeat 50% 50%;
+        }
+
+        .module:nth-of-type(2) .image {
+          background: url(../img/laparo_module_4.png) no-repeat 50% 50%;
+        }
+      }
+    }
+
+    .row:nth-of-type(2) {
+      .col:nth-of-type(1) {
+        .module:nth-of-type(1) .image {
+          background: url(../img/laparo_module_5.png) no-repeat 50% 50%;
+        }
+
+        .module:nth-of-type(2) .image {
+          background: url(../img/laparo_module_6.png) no-repeat 50% 50%;
+        }
+      }
+
+      .col:nth-of-type(2) {
+        .module:nth-of-type(1) .image {
+          background: url(../img/laparo_module_7.png) no-repeat 50% 50%;
+        }
+
+        .module:nth-of-type(2) .image {
+          background: url(../img/laparo_module_8.png) no-repeat 50% 50%;
+        }
+      }
+    }
+
+    .row:nth-of-type(3) {
+      .col:nth-of-type(1) {
+        .module:nth-of-type(1) .image {
+          background: url(../img/laparo_module_9.png) no-repeat 50% 50%;
+        }
+
+        .module:nth-of-type(2) .image {
+          background: url(../img/laparo_module_10.png) no-repeat 50% 50%;
+        }
+      }
+    }
+  }
+
+  section.wrap-up {
+    margin-top: 90px;
+    margin-bottom: 175px;
+
+    p {
+      margin-top: 20px;
+      padding-right: 20px;
+    }
+
+    ul {
+      margin-top: 20px;
+      padding-left: 22px;
+
+      li {
+        position: relative;
+
+        &:before {
+          content: "—";
+          position: absolute;
+          left: -22px;
+          top: -1px;
+        }
+
+        &:not(:first-child) {
+          margin-top: 27px;
+        }
+      }
+    }
+  }
+}
+
+body.product.lpr {
+  section.billboard {
+    .col:nth-child(1) {
+      .label {
+        background: url(../img/label-lpr.svg) no-repeat 50% 50%;
+        background-size: 485px 110px;
+      }
+    }
+  }
+}
+
+body.product.evs {
+  section.billboard {
+    .col:nth-child(1) {
+      .label {
+        background: url(../img/label-evs.svg) no-repeat 50% 50%;
+        background-size: 485px 110px;
+      }
+    }
+
+    .col:nth-child(2) {
+      .product-pic {
+        .image {
+          background: url(../img/evs_standard.png) no-repeat 50% 50%;
+        }
+      }
+    }
+  }
+
+  section.product-versions {
+    .row .col.version.basic .image {
+      background: url(../img/evs_basic.png) no-repeat 50% 50%;
+    }
+
+    .row .col.version.standard .image {
+      background: url(../img/evs_standard.png) no-repeat 50% 50%;
+    }
+
+    .row .col.version.hybrid .image {
+      background: url(../img/evs_hybrid.png) no-repeat 50% 50%;
+    }
+  }
+
+  section.modules {
+    .row:nth-of-type(1) {
+      .col:nth-of-type(1) {
+        .module:nth-of-type(1) .image {
+          background: url(../img/product-evs_learn-module-1.jpg) no-repeat 50% 50%;
+        }
+
+        .module:nth-of-type(2) .image {
+          background: url(../img/product-evs_learn-module-2.jpg) no-repeat 50% 50%;
+        }
+      }
+
+      .col:nth-of-type(2) {
+        .module:nth-of-type(1) .image {
+          background: url(../img/product-evs_learn-module-3.jpg) no-repeat 50% 50%;
+        }
+
+        .module:nth-of-type(2) .image {
+          background: url(../img/product-evs_learn-module-4.jpg) no-repeat 50% 50%;
+        }
+      }
+    }
+
+    .row:nth-of-type(2) {
+      .col:nth-of-type(1) {
+        .module:nth-of-type(1) .image {
+          background: url(../img/product-evs_learn-module-5.jpg) no-repeat 50% 50%;
+        }
+
+        .module:nth-of-type(2) .image {
+          background: url(../img/product-evs_learn-module-6.jpg) no-repeat 50% 50%;
+        }
+      }
+
+      .col:nth-of-type(2) {
+        .module:nth-of-type(1) .image {
+          background: url(../img/product-evs_learn-module-7.jpg) no-repeat 50% 50%;
+        }
+
+        .module:nth-of-type(2) .image {
+          background: url(../img/product-evs_learn-module-8.jpg) no-repeat 50% 50%;
+        }
+      }
+    }
+  }
+}
+
+body.product.brs {
+  section.billboard {
+    .col:nth-child(1) {
+      .label {
+        background: url(../img/label-brs.svg) no-repeat 50% 50%;
+        background-size: 485px 110px;
+      }
+    }
+
+    .col:nth-child(2) {
+      .product-pic {
+        .image {
+          background: url(../img/brs_standard.png) no-repeat 50% 50%;
+        }
+      }
+    }
+  }
+
+  section.product-versions {
+    .row .col.version.standard .image {
+      background: url(../img/brs_standard.png) no-repeat 50% 50%;
+    }
+  }
+
+  section.modules {
+    .row:nth-of-type(1) {
+      .col:nth-of-type(1) {
+        .module:nth-of-type(1) .image {
+          background: url(../img/product-bronch_learn-module-1.jpg) no-repeat 50% 50%;
+        }
+
+        .module:nth-of-type(2) .image {
+          background: url(../img/product-bronch_learn-module-2.jpg) no-repeat 50% 50%;
+        }
+      }
+
+      .col:nth-of-type(2) {
+        .module:nth-of-type(1) .image {
+          background: url(../img/product-bronch_learn-module-3.jpg) no-repeat 50% 50%;
+        }
+
+        .module:nth-of-type(2) .image {
+          background: url(../img/product-bronch_learn-module-4.jpg) no-repeat 50% 50%;
+        }
+      }
+    }
+
+    .row:nth-of-type(2) {
+      .col:nth-of-type(1) {
+        .module:nth-of-type(1) .image {
+          background: url(../img/product-bronch_learn-module-5.jpg) no-repeat 50% 50%;
+        }
+      }
     }
   }
 }

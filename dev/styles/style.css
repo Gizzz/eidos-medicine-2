@@ -243,25 +243,25 @@ section.billboard .product-pics .pic.slide-out {
   }
 }
 section.billboard .product-pics .pic.brs {
-  background: url(../img/product-brs.png) no-repeat 50% 50%;
+  background: url(../img/brs_standard.png) no-repeat 50% 50%;
 }
 section.billboard .product-pics .pic.evs {
-  background: url(../img/product-evs.png) no-repeat 50% 50%;
+  background: url(../img/evs_standard.png) no-repeat 50% 50%;
 }
 section.billboard .product-pics .pic.ghs {
-  background: url(../img/product-ghs.png) no-repeat 50% 50%;
+  background: url(../img/ghs_standard.png) no-repeat 50% 50%;
 }
 section.billboard .product-pics .pic.gsr {
-  background: url(../img/product-gsr.png) no-repeat 50% 50%;
+  background: url(../img/gsr_standard.png) no-repeat 50% 50%;
 }
 section.billboard .product-pics .pic.lpr {
-  background: url(../img/product-lpr.png) no-repeat 50% 50%;
+  background: url(../img/lpr_standard.png) no-repeat 50% 50%;
 }
 section.billboard .product-pics .pic.ran {
-  background: url(../img/product-ran.png) no-repeat 50% 50%;
+  background: url(../img/ran_standard.png) no-repeat 50% 50%;
 }
 section.billboard .product-pics .pic.stm {
-  background: url(../img/product-stm.png) no-repeat 50% 50%;
+  background: url(../img/stm_standard.png) no-repeat 50% 50%;
 }
 section.numbers {
   padding-top: 54px;
@@ -317,88 +317,100 @@ section.numbers .col.text h1 {
 section.numbers .col.text p {
   margin-top: 20px;
 }
-body.product.lpr section.billboard {
+body.product section.billboard {
   padding-top: 54px;
   padding-bottom: 70px;
   color: #ffffff;
   background: url(../img/bg-cubes-blue.png);
 }
-body.product.lpr section.billboard .col:nth-child(1) .bar {
+body.product section.billboard .col:nth-child(1) .bar {
   height: 13px;
   background: #fff;
 }
-body.product.lpr section.billboard .col:nth-child(1) h1 {
+body.product section.billboard .col:nth-child(1) h1 {
   margin-top: 40px;
   margin-bottom: 25px;
   font-size: 38px;
   font-weight: 700;
   line-height: 40px;
 }
-body.product.lpr section.billboard .col:nth-child(1) .label {
+body.product section.billboard .col:nth-child(1) .label {
   width: 485px;
   height: 110px;
-  background: url(../img/label-lpr.svg) no-repeat 50% 50%;
-  background-size: 485px 110px;
 }
-body.product.lpr section.billboard .col:nth-child(1) h2 {
+body.product section.billboard .col:nth-child(1) h2 {
   margin-top: 22px;
   font-size: 29px;
   line-height: 28px;
 }
-body.product.lpr section.billboard .col:nth-child(1) .btn {
+body.product section.billboard .col:nth-child(1) .btn {
   margin-top: 51px;
-  width: 100%;
+  width: 476px;
 }
-body.product.lpr section.billboard .col:nth-child(2) .product-pics {
+body.product section.billboard .col:nth-child(2) .product-pic {
   position: relative;
   width: 100%;
   height: 592px;
 }
-body.product.lpr section.billboard .col:nth-child(2) .product-pics .image {
+body.product section.billboard .col:nth-child(2) .product-pic .bg-shadow {
+  width: 100%;
+  height: 592px;
+  background: url(../img/bg-product-shadow.png) no-repeat 50% 50%;
+}
+body.product section.billboard .col:nth-child(2) .product-pic .image {
   position: absolute;
   top: 0;
   width: 100%;
   height: 592px;
-  background: url(../img/product-lpr.png) no-repeat 50% 50%;
+  background: url(../img/lpr_standard.png) no-repeat 50% 50%;
 }
-body.product.lpr section.descr {
+body.product section.descr {
   padding-top: 65px;
   padding-bottom: 55px;
 }
-body.product.lpr section.descr .col:nth-child(1) ul {
+body.product section.descr .col:nth-child(1) ul {
   margin-top: 5px;
   border: 13px solid #2D8FCE;
   width: 476px;
   padding: 53px 60px;
 }
-body.product.lpr section.descr .col:nth-child(1) ul li {
+body.product section.descr .col:nth-child(1) ul li {
   position: relative;
 }
-body.product.lpr section.descr .col:nth-child(1) ul li:before {
+body.product section.descr .col:nth-child(1) ul li:before {
   content: "—";
   position: absolute;
   left: -22px;
   top: -1px;
 }
-body.product.lpr section.descr .col:nth-child(1) ul li:not(:first-child) {
+body.product section.descr .col:nth-child(1) ul li:not(:first-child) {
   margin-top: 27px;
 }
-body.product.lpr section.descr .col:nth-child(2) p:not(:first-child) {
+body.product section.descr .col:nth-child(2) p:not(:first-child) {
   margin-top: 20px;
 }
-body.product.lpr section.product-versions {
+body.product section.product-versions {
   padding-top: 34px;
   padding-bottom: 43px;
   background: url(../img/bg-cubes-gray.png);
 }
-body.product.lpr section.product-versions .col.version .image,
-body.product.lpr section.product-versions .row.version .image {
-  height: 566px;
-  background: green;
-  border: 5px solid red;
+body.product section.product-versions .row:not(:first-child) {
+  margin-top: 20px;
 }
-body.product.lpr section.product-versions .col.version h1,
-body.product.lpr section.product-versions .row.version h1 {
+body.product section.product-versions .col.version .image {
+  height: 566px;
+}
+body.product section.product-versions .col.version.basic .image {
+  background: url(../img/lpr_basic.png) no-repeat 50% 50%;
+}
+body.product section.product-versions .col.version.standard .image {
+  background: url(../img/lpr_standard.png) no-repeat 50% 50%;
+  background-size: 415px 566px;
+}
+body.product section.product-versions .col.version.hybrid .image {
+  background: url(../img/lpr_hybrid.png) no-repeat 50% 50%;
+}
+body.product section.product-versions .col.version h1 {
   display: inline-block;
   margin-top: 33px;
   border-top: 13px solid #2D8FCE;
@@ -408,18 +420,14 @@ body.product.lpr section.product-versions .row.version h1 {
   line-height: 40px;
   color: #2D8FCE;
 }
-body.product.lpr section.product-versions .col.version p,
-body.product.lpr section.product-versions .row.version p {
+body.product section.product-versions .col.version p {
   margin-top: 20px;
   width: 475px;
 }
-body.product.lpr section.product-versions .row.version:not(:first-child) {
-  margin-top: 20px;
-}
-body.product.lpr section.modules {
+body.product section.modules {
   padding-top: 70px;
 }
-body.product.lpr section.modules h1 {
+body.product section.modules h1 {
   display: inline-block;
   border-top: 13px solid #2D8FCE;
   padding-top: 42px;
@@ -428,7 +436,156 @@ body.product.lpr section.modules h1 {
   line-height: 40px;
   color: #2D8FCE;
 }
-body.product.lpr section.modules p {
-  margin-top: 20px;
+body.product section.modules p {
+  margin-top: 38px;
   width: 475px;
+}
+body.product section.modules .row {
+  margin-top: 65px;
+}
+body.product section.modules .row .module {
+  float: left;
+  width: 50%;
+}
+body.product section.modules .row .module .image {
+  width: 210px;
+  height: 210px;
+  background: #000;
+}
+body.product section.modules .row .module h3 {
+  margin-top: 16px;
+  padding-right: 25px;
+  font-size: 17px;
+  line-height: 19px;
+  color: #000;
+}
+body.product section.modules .row .module p {
+  margin-top: 16px;
+  width: 100%;
+  padding-right: 35px;
+  font-size: 15px;
+  line-height: 18px;
+}
+body.product section.modules .row:nth-of-type(1) .col:nth-of-type(1) .module:nth-of-type(1) .image {
+  background: url(../img/laparo_module_1.png) no-repeat 50% 50%;
+}
+body.product section.modules .row:nth-of-type(1) .col:nth-of-type(1) .module:nth-of-type(2) .image {
+  background: url(../img/laparo_module_2.png) no-repeat 50% 50%;
+}
+body.product section.modules .row:nth-of-type(1) .col:nth-of-type(2) .module:nth-of-type(1) .image {
+  background: url(../img/laparo_module_3.png) no-repeat 50% 50%;
+}
+body.product section.modules .row:nth-of-type(1) .col:nth-of-type(2) .module:nth-of-type(2) .image {
+  background: url(../img/laparo_module_4.png) no-repeat 50% 50%;
+}
+body.product section.modules .row:nth-of-type(2) .col:nth-of-type(1) .module:nth-of-type(1) .image {
+  background: url(../img/laparo_module_5.png) no-repeat 50% 50%;
+}
+body.product section.modules .row:nth-of-type(2) .col:nth-of-type(1) .module:nth-of-type(2) .image {
+  background: url(../img/laparo_module_6.png) no-repeat 50% 50%;
+}
+body.product section.modules .row:nth-of-type(2) .col:nth-of-type(2) .module:nth-of-type(1) .image {
+  background: url(../img/laparo_module_7.png) no-repeat 50% 50%;
+}
+body.product section.modules .row:nth-of-type(2) .col:nth-of-type(2) .module:nth-of-type(2) .image {
+  background: url(../img/laparo_module_8.png) no-repeat 50% 50%;
+}
+body.product section.modules .row:nth-of-type(3) .col:nth-of-type(1) .module:nth-of-type(1) .image {
+  background: url(../img/laparo_module_9.png) no-repeat 50% 50%;
+}
+body.product section.modules .row:nth-of-type(3) .col:nth-of-type(1) .module:nth-of-type(2) .image {
+  background: url(../img/laparo_module_10.png) no-repeat 50% 50%;
+}
+body.product section.wrap-up {
+  margin-top: 90px;
+  margin-bottom: 175px;
+}
+body.product section.wrap-up p {
+  margin-top: 20px;
+  padding-right: 20px;
+}
+body.product section.wrap-up ul {
+  margin-top: 20px;
+  padding-left: 22px;
+}
+body.product section.wrap-up ul li {
+  position: relative;
+}
+body.product section.wrap-up ul li:before {
+  content: "—";
+  position: absolute;
+  left: -22px;
+  top: -1px;
+}
+body.product section.wrap-up ul li:not(:first-child) {
+  margin-top: 27px;
+}
+body.product.lpr section.billboard .col:nth-child(1) .label {
+  background: url(../img/label-lpr.svg) no-repeat 50% 50%;
+  background-size: 485px 110px;
+}
+body.product.evs section.billboard .col:nth-child(1) .label {
+  background: url(../img/label-evs.svg) no-repeat 50% 50%;
+  background-size: 485px 110px;
+}
+body.product.evs section.billboard .col:nth-child(2) .product-pic .image {
+  background: url(../img/evs_standard.png) no-repeat 50% 50%;
+}
+body.product.evs section.product-versions .row .col.version.basic .image {
+  background: url(../img/evs_basic.png) no-repeat 50% 50%;
+}
+body.product.evs section.product-versions .row .col.version.standard .image {
+  background: url(../img/evs_standard.png) no-repeat 50% 50%;
+}
+body.product.evs section.product-versions .row .col.version.hybrid .image {
+  background: url(../img/evs_hybrid.png) no-repeat 50% 50%;
+}
+body.product.evs section.modules .row:nth-of-type(1) .col:nth-of-type(1) .module:nth-of-type(1) .image {
+  background: url(../img/product-evs_learn-module-1.jpg) no-repeat 50% 50%;
+}
+body.product.evs section.modules .row:nth-of-type(1) .col:nth-of-type(1) .module:nth-of-type(2) .image {
+  background: url(../img/product-evs_learn-module-2.jpg) no-repeat 50% 50%;
+}
+body.product.evs section.modules .row:nth-of-type(1) .col:nth-of-type(2) .module:nth-of-type(1) .image {
+  background: url(../img/product-evs_learn-module-3.jpg) no-repeat 50% 50%;
+}
+body.product.evs section.modules .row:nth-of-type(1) .col:nth-of-type(2) .module:nth-of-type(2) .image {
+  background: url(../img/product-evs_learn-module-4.jpg) no-repeat 50% 50%;
+}
+body.product.evs section.modules .row:nth-of-type(2) .col:nth-of-type(1) .module:nth-of-type(1) .image {
+  background: url(../img/product-evs_learn-module-5.jpg) no-repeat 50% 50%;
+}
+body.product.evs section.modules .row:nth-of-type(2) .col:nth-of-type(1) .module:nth-of-type(2) .image {
+  background: url(../img/product-evs_learn-module-6.jpg) no-repeat 50% 50%;
+}
+body.product.evs section.modules .row:nth-of-type(2) .col:nth-of-type(2) .module:nth-of-type(1) .image {
+  background: url(../img/product-evs_learn-module-7.jpg) no-repeat 50% 50%;
+}
+body.product.evs section.modules .row:nth-of-type(2) .col:nth-of-type(2) .module:nth-of-type(2) .image {
+  background: url(../img/product-evs_learn-module-8.jpg) no-repeat 50% 50%;
+}
+body.product.brs section.billboard .col:nth-child(1) .label {
+  background: url(../img/label-brs.svg) no-repeat 50% 50%;
+  background-size: 485px 110px;
+}
+body.product.brs section.billboard .col:nth-child(2) .product-pic .image {
+  background: url(../img/brs_standard.png) no-repeat 50% 50%;
+}
+body.product.brs section.product-versions .row .col.version.standard .image {
+  background: url(../img/brs_standard.png) no-repeat 50% 50%;
+}
+body.product.brs section.modules .row:nth-of-type(1) .col:nth-of-type(1) .module:nth-of-type(1) .image {
+  background: url(../img/product-bronch_learn-module-1.jpg) no-repeat 50% 50%;
+}
+body.product.brs section.modules .row:nth-of-type(1) .col:nth-of-type(1) .module:nth-of-type(2) .image {
+  background: url(../img/product-bronch_learn-module-2.jpg) no-repeat 50% 50%;
+}
+body.product.brs section.modules .row:nth-of-type(1) .col:nth-of-type(2) .module:nth-of-type(1) .image {
+  background: url(../img/product-bronch_learn-module-3.jpg) no-repeat 50% 50%;
+}
+body.product.brs section.modules .row:nth-of-type(1) .col:nth-of-type(2) .module:nth-of-type(2) .image {
+  background: url(../img/product-bronch_learn-module-4.jpg) no-repeat 50% 50%;
+}
+body.product.brs section.modules .row:nth-of-type(2) .col:nth-of-type(1) .module:nth-of-type(1) .image {
+  background: url(../img/product-bronch_learn-module-5.jpg) no-repeat 50% 50%;
 }
