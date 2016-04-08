@@ -1,15 +1,28 @@
 "use strict";
 
 function initSlider() {
-	var labels = document.querySelectorAll(".product-labels .label");
-	var pics = document.querySelectorAll(".product-pics .pic");
+	var sliderSection = document.querySelector("section.billboard");
+	var labels = sliderSection.querySelectorAll(".product-labels .label");
+	var pics = sliderSection.querySelectorAll(".product-pics .pic");
+	var bgShadow = sliderSection.querySelector(".bg-shadow");
+	var learnMoreBtn = sliderSection.querySelector(".learn-more");
 
-	labels[0].classList.add("fade-in");
-	pics[0].classList.add("slide-in");
 	var currentSlideIndex = 0;
+	var firstRun = true;
 
-	var animationInterval = 5000;
-	setInterval(function () {
+	var updateSlider = function() {
+		if (firstRun) {
+			labels[0].classList.add("fade-in");
+			pics[0].classList.add("slide-in");
+			bgShadow.classList.add("fade-in");
+			learnMoreBtn.classList.add("fade-in");
+
+			learnMoreBtn.href = labels[currentSlideIndex].dataset.productUrl;
+
+			firstRun = false;
+			return;
+		}
+
 		labels[currentSlideIndex].classList.remove("fade-in");
 		labels[currentSlideIndex].classList.add("fade-out");
 
@@ -26,7 +39,14 @@ function initSlider() {
 
 		pics[currentSlideIndex].classList.remove("slide-out");
 		pics[currentSlideIndex].classList.add("slide-in");
-	}, animationInterval);
+
+		learnMoreBtn.href = labels[currentSlideIndex].dataset.productUrl;
+	};
+
+	updateSlider();
+
+	var animationInterval = 2000;
+	setInterval(updateSlider, animationInterval);
 }
 
 function initNumbersCounter() {

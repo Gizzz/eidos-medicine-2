@@ -159,6 +159,44 @@ header.page {
 }
 
 section.billboard {
+
+  // ---- animations
+
+  .fade-in {
+    animation-name: fade-in;
+    animation-duration: .5s;
+    animation-delay: .25s;
+    animation-fill-mode: forwards;
+  }
+
+  .fade-out {
+    animation-name: fade-out;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fade-out {
+    0% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
+
+  // ----
+
   padding-top: 54px;
   padding-bottom: 70px;
   color: #ffffff;
@@ -190,6 +228,10 @@ section.billboard {
     position: relative;
     margin-top: 50px;
 
+    .btn.learn-more {
+      opacity: 0;
+    }
+
     .product-labels {
       .label {
         position: absolute;
@@ -197,39 +239,6 @@ section.billboard {
         bottom: 16px;
         height: 32px;
         opacity: 0;
-
-        &.fade-in {
-          animation-name: fade-in;
-          animation-duration: .5s;
-          animation-delay: .25s;
-          animation-fill-mode: forwards;
-        }
-
-        &.fade-out {
-          animation-name: fade-out;
-          animation-duration: .5s;
-          animation-fill-mode: forwards;
-        }
-
-        @keyframes fade-in {
-          0% {
-            opacity: 0;
-          }
-
-          100% {
-            opacity: 1;
-          }
-        }
-
-        @keyframes fade-out {
-          0% {
-            opacity: 1;
-          }
-
-          100% {
-            opacity: 0;
-          }
-        }
 
         &.brs {
           width: 234px;
@@ -281,6 +290,7 @@ section.billboard {
       width: 100%;
       height: @slider-height;
       background: url(../img/bg-product-shadow.png) no-repeat 50% 50%;
+      opacity: 0;
     }
 
     .pic {
