@@ -45,9 +45,13 @@ function initSlider() {
 
 	updateSlider();
 
-	var animationInterval = 2000;
+	var animationInterval = 5000;
 	setInterval(updateSlider, animationInterval);
 }
+
+window.onload = function () {
+	initSlider();
+};
 
 function initNumbersCounter() {
 	var options = {
@@ -82,7 +86,17 @@ function initNumbersCounter() {
 	counter6.start();
 }
 
-window.onload = function () {
-	initSlider();
-	initNumbersCounter();
+var isScrollAnimationTriggered = false;
+window.onscroll = function () {
+	if (isScrollAnimationTriggered) return;
+
+	var trigger = document.querySelector(".animation-trigger");
+	var coords = trigger.getBoundingClientRect();
+	var isTriggerVisible = coords.top > 0;
+
+	if (isTriggerVisible) {
+		initNumbersCounter();
+		isScrollAnimationTriggered = true;
+	}
 };
+
