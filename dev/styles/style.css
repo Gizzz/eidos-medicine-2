@@ -697,3 +697,18 @@ body.product.stm section.product-versions .row .col.version.standard .image {
 body.product.stm section.product-versions .row .col.version.hybrid .image {
   background: url(../img/stm_hybrid.png) no-repeat 50% 50%;
 }
+body.product.ran section.billboard .col:nth-child(1) .label {
+  background: url(../img/label-ran.svg) no-repeat 50% 50%;
+  background-size: 485px 110px;
+}
+body.product.ran section.billboard .col:nth-child(1) .btn {
+  margin-top: 78px;
+}
+body.product.ran section.billboard .col:nth-child(2) .product-pic .image {
+  background: url(../img/ran_standard.png) no-repeat 50% 50%;
+}
+body.product.ran section.product-versions .row .col.version.main .image {
+  position: relative;
+  width: 1024px;
+  background: url(../img/ran_main.png) no-repeat 50% 50%;
+}
