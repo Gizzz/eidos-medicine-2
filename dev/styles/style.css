@@ -477,7 +477,7 @@ body.product section.modules .row .module p {
 }
 body.product section.wrap-up {
   margin-top: 90px;
-  margin-bottom: 175px;
+  margin-bottom: 113px;
 }
 body.product section.wrap-up p {
   margin-top: 20px;
@@ -498,6 +498,52 @@ body.product section.wrap-up ul li:before {
 }
 body.product section.wrap-up ul li:not(:first-child) {
   margin-top: 27px;
+}
+body.product section.distributor {
+  margin-bottom: 364px;
+  padding-top: 54px;
+  padding-bottom: 87px;
+  background: url(../img/bg-cubes-blue.png);
+  color: #ffffff;
+}
+body.product section.distributor .col:first-child {
+  position: relative;
+  top: 37px;
+  width: 252px;
+}
+body.product section.distributor .col:first-child .logo {
+  width: 160px;
+  height: 75px;
+  background: url(../img/logo-distributor.svg);
+}
+body.product section.distributor .col:first-child h3 {
+  margin-top: 23px;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 800;
+}
+body.product section.distributor .col:first-child p {
+  margin-top: 20px;
+}
+body.product section.distributor .col:first-child p a {
+  color: #ffffff;
+}
+body.product section.distributor .col:last-child {
+  width: 772px;
+}
+body.product section.distributor .col:last-child h1 {
+  display: inline-block;
+  border-top: 13px solid #fff;
+  padding-top: 42px;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 40px;
+}
+body.product section.distributor .col:last-child p:first-of-type {
+  margin-top: 37px;
+}
+body.product section.distributor .col:last-child p:last-of-type {
+  margin-top: 20px;
 }
 body.product.lpr section.billboard .col:nth-child(1) .label {
   background: url(../img/label-lpr.svg) no-repeat 50% 50%;
