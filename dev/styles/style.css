@@ -762,3 +762,97 @@ body.product.ran section.product-versions .row .col.version.main .image {
   width: 1024px;
   background: url(../img/ran_main.png) no-repeat 50% 50%;
 }
+body.product-list section.product {
+  padding-top: 54px;
+  padding-bottom: 70px;
+  color: #ffffff;
+  background: url(../img/bg-cubes-blue.png);
+}
+body.product-list section.product .col.text .bar {
+  height: 13px;
+  background: #fff;
+}
+body.product-list section.product .col.text h1 {
+  margin-top: 40px;
+  margin-bottom: 25px;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 40px;
+}
+body.product-list section.product .col.text .label {
+  width: 485px;
+  height: 110px;
+}
+body.product-list section.product .col.text h2 {
+  margin-top: 22px;
+  font-size: 29px;
+  line-height: 28px;
+}
+body.product-list section.product .col.text .btn {
+  margin-top: 51px;
+}
+body.product-list section.product .col.visual .product-pic {
+  position: relative;
+  width: 100%;
+  height: 592px;
+}
+body.product-list section.product .col.visual .product-pic .bg-shadow {
+  width: 100%;
+  height: 592px;
+  background: url(../img/bg-product-shadow.png) no-repeat 50% 50%;
+}
+body.product-list section.product .col.visual .product-pic .image {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 592px;
+}
+body.product-list section.product.brs .col.text .label {
+  background: url(../img/label-brs.svg) no-repeat 50% 50%;
+  background-size: 485px 110px;
+}
+body.product-list section.product.brs .col.visual .product-pic .image {
+  background: url(../img/brs_standard.png) no-repeat 50% 50%;
+}
+body.product-list section.product.evs .col.text .label {
+  background: url(../img/label-evs.svg) no-repeat 50% 50%;
+  background-size: 485px 110px;
+}
+body.product-list section.product.evs .col.visual .product-pic .image {
+  background: url(../img/evs_standard.png) no-repeat 50% 50%;
+}
+body.product-list section.product.ghs .col.text .label {
+  background: url(../img/label-ghs.svg) no-repeat 50% 50%;
+  background-size: 485px 110px;
+}
+body.product-list section.product.ghs .col.visual .product-pic .image {
+  background: url(../img/ghs_standard.png) no-repeat 50% 50%;
+}
+body.product-list section.product.gsr .col.text .label {
+  background: url(../img/label-gsr.svg) no-repeat 50% 50%;
+  background-size: 485px 110px;
+}
+body.product-list section.product.gsr .col.visual .product-pic .image {
+  background: url(../img/gsr_standard.png) no-repeat 50% 50%;
+}
+body.product-list section.product.lpr .col.text .label {
+  background: url(../img/label-lpr.svg) no-repeat 50% 50%;
+  background-size: 485px 110px;
+}
+body.product-list section.product.lpr .col.visual .product-pic .image {
+  background: url(../img/lpr_standard.png) no-repeat 50% 50%;
+}
+body.product-list section.product.ran .col.text .label {
+  background: url(../img/label-ran.svg) no-repeat 50% 50%;
+  background-size: 485px 110px;
+}
+body.product-list section.product.ran .col.visual .product-pic .image {
+  background: url(../img/ran_standard.png) no-repeat 50% 50%;
+}
+body.product-list section.product.stm .col.text .label {
+  background: url(../img/label-stm.svg) no-repeat 50% 50%;
+  background-size: 485px 110px;
+}
+body.product-list section.product.stm .col.visual .product-pic .image {
+  background: url(../img/stm_standard.png) no-repeat 50% 50%;
+}
