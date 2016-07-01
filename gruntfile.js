@@ -362,6 +362,11 @@ module.exports = function (grunt) {
 
 	// cmd line tasks
 
+	grunt.registerTask('dev', [
+		'less',
+		'watch',
+	]);
+
 	grunt.registerTask('serve', [
 		'less',
 		'browserSync',

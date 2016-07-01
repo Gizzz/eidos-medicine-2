@@ -321,6 +321,52 @@ section.numbers .col.text h1 {
 section.numbers .col.text p {
   margin-top: 20px;
 }
+section.distributor {
+  margin-bottom: 364px;
+  padding-top: 54px;
+  padding-bottom: 87px;
+  background: url(../img/bg-cubes-blue.png);
+  color: #ffffff;
+}
+section.distributor .col:first-child {
+  position: relative;
+  top: 37px;
+  width: 252px;
+}
+section.distributor .col:first-child .logo {
+  width: 160px;
+  height: 75px;
+  background: url(../img/logo-distributor.svg);
+}
+section.distributor .col:first-child h3 {
+  margin-top: 23px;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 800;
+}
+section.distributor .col:first-child p {
+  margin-top: 20px;
+}
+section.distributor .col:first-child p a {
+  color: #ffffff;
+}
+section.distributor .col:last-child {
+  width: 772px;
+}
+section.distributor .col:last-child h1 {
+  display: inline-block;
+  border-top: 13px solid #fff;
+  padding-top: 42px;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 40px;
+}
+section.distributor .col:last-child p:first-of-type {
+  margin-top: 37px;
+}
+section.distributor .col:last-child p:last-of-type {
+  margin-top: 20px;
+}
 body.product section.billboard {
   padding-top: 54px;
   padding-bottom: 70px;
