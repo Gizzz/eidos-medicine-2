@@ -93,22 +93,71 @@ a {
   color: #2D8FCE;
   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.2);
 }
-header.page {
-  height: 160px;
+header.page .wrapper {
+  position: relative;
+  min-height: 124px;
 }
-section.billboard {
+header.page .wrapper:before,
+header.page .wrapper:after {
+  content: " ";
+  display: table;
+}
+header.page .wrapper:after {
+  clear: both;
+}
+header.page .wrapper .logo {
+  position: absolute;
+  bottom: 13px;
+  display: block;
+  width: 355px;
+  height: 45px;
+  background: url(../img/logo-header.png) no-repeat 50% 50%;
+}
+header.page .wrapper .right-block {
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+}
+header.page .wrapper .right-block:before,
+header.page .wrapper .right-block:after {
+  content: " ";
+  display: table;
+}
+header.page .wrapper .right-block:after {
+  clear: both;
+}
+header.page .wrapper .right-block .tel {
+  text-align: right;
+  font-size: 30px;
+  color: #2D8FCE;
+}
+header.page .wrapper .right-block .tel .prefix {
+  font-size: 20px;
+}
+header.page .wrapper .right-block ul.nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  width: 365px;
+}
+header.page .wrapper .right-block ul.nav li a {
+  font-size: 19px;
+  font-weight: 600;
+  color: #000000;
+}
+body.index section.billboard {
   padding-top: 54px;
   padding-bottom: 70px;
   color: #ffffff;
   background: url(../img/bg-cubes-blue.png);
 }
-section.billboard .fade-in {
+body.index section.billboard .fade-in {
   animation-name: fade-in;
   animation-duration: .5s;
   animation-delay: .25s;
   animation-fill-mode: forwards;
 }
-section.billboard .fade-out {
+body.index section.billboard .fade-out {
   animation-name: fade-out;
   animation-duration: .5s;
   animation-fill-mode: forwards;
@@ -129,85 +178,85 @@ section.billboard .fade-out {
     opacity: 0;
   }
 }
-section.billboard .bar {
+body.index section.billboard .bar {
   height: 13px;
   background: #fff;
 }
-section.billboard h1 {
+body.index section.billboard h1 {
   margin-top: 40px;
   margin-bottom: 40px;
   font-size: 38px;
   font-weight: 700;
   line-height: 40px;
 }
-section.billboard p {
+body.index section.billboard p {
   margin-top: 20px;
   font-size: 18px;
   line-height: 22px;
   font-weight: 400;
 }
-section.billboard .footer {
+body.index section.billboard .footer {
   position: relative;
   margin-top: 50px;
 }
-section.billboard .footer:before,
-section.billboard .footer:after {
+body.index section.billboard .footer:before,
+body.index section.billboard .footer:after {
   content: " ";
   display: table;
 }
-section.billboard .footer:after {
+body.index section.billboard .footer:after {
   clear: both;
 }
-section.billboard .footer .btn.learn-more {
+body.index section.billboard .footer .btn.learn-more {
   opacity: 0;
 }
-section.billboard .footer .product-labels .label {
+body.index section.billboard .footer .product-labels .label {
   position: absolute;
   right: 0;
   bottom: 16px;
   height: 32px;
   opacity: 0;
 }
-section.billboard .footer .product-labels .label.brs {
+body.index section.billboard .footer .product-labels .label.brs {
   width: 234px;
   background: url(../img/label-brs.svg);
 }
-section.billboard .footer .product-labels .label.evs {
+body.index section.billboard .footer .product-labels .label.evs {
   width: 232px;
   background: url(../img/label-evs.svg);
 }
-section.billboard .footer .product-labels .label.ghs {
+body.index section.billboard .footer .product-labels .label.ghs {
   width: 242px;
   background: url(../img/label-ghs.svg);
 }
-section.billboard .footer .product-labels .label.gsr {
+body.index section.billboard .footer .product-labels .label.gsr {
   width: 237px;
   background: url(../img/label-gsr.svg);
 }
-section.billboard .footer .product-labels .label.lpr {
+body.index section.billboard .footer .product-labels .label.lpr {
   width: 228px;
   background: url(../img/label-lpr.svg);
 }
-section.billboard .footer .product-labels .label.ran {
+body.index section.billboard .footer .product-labels .label.ran {
   width: 239px;
   background: url(../img/label-ran.svg);
 }
-section.billboard .footer .product-labels .label.stm {
+body.index section.billboard .footer .product-labels .label.stm {
   width: 238px;
   background: url(../img/label-stm.svg);
 }
-section.billboard .product-pics {
+body.index section.billboard .product-pics {
   position: relative;
   width: 100%;
   height: 592px;
 }
-section.billboard .product-pics .bg-shadow {
+body.index section.billboard .product-pics .bg-shadow {
   width: 100%;
   height: 592px;
   background: url(../img/bg-product-shadow.png) no-repeat 50% 50%;
   opacity: 0;
 }
-section.billboard .product-pics .pic {
+body.index section.billboard .product-pics .pic {
   position: absolute;
   top: 0;
   width: 100%;
@@ -216,13 +265,13 @@ section.billboard .product-pics .pic {
   animation-duration: .5s;
   animation-fill-mode: forwards;
 }
-section.billboard .product-pics .pic.slide-in {
+body.index section.billboard .product-pics .pic.slide-in {
   animation-name: slide-in;
   animation-duration: .5s;
   animation-delay: .25s;
   animation-fill-mode: forwards;
 }
-section.billboard .product-pics .pic.slide-out {
+body.index section.billboard .product-pics .pic.slide-out {
   animation-name: slide-out;
   animation-duration: .5s;
   animation-fill-mode: forwards;
@@ -246,71 +295,71 @@ section.billboard .product-pics .pic.slide-out {
     transform: translateX(0%) scale(1);
   }
 }
-section.billboard .product-pics .pic.brs {
+body.index section.billboard .product-pics .pic.brs {
   background: url(../img/brs_standard.png) no-repeat 50% 50%;
 }
-section.billboard .product-pics .pic.evs {
+body.index section.billboard .product-pics .pic.evs {
   background: url(../img/evs_standard.png) no-repeat 50% 50%;
 }
-section.billboard .product-pics .pic.ghs {
+body.index section.billboard .product-pics .pic.ghs {
   background: url(../img/ghs_standard.png) no-repeat 50% 50%;
 }
-section.billboard .product-pics .pic.gsr {
+body.index section.billboard .product-pics .pic.gsr {
   background: url(../img/gsr_standard.png) no-repeat 50% 50%;
 }
-section.billboard .product-pics .pic.lpr {
+body.index section.billboard .product-pics .pic.lpr {
   background: url(../img/lpr_standard.png) no-repeat 50% 50%;
 }
-section.billboard .product-pics .pic.ran {
+body.index section.billboard .product-pics .pic.ran {
   background: url(../img/ran_standard.png) no-repeat 50% 50%;
 }
-section.billboard .product-pics .pic.stm {
+body.index section.billboard .product-pics .pic.stm {
   background: url(../img/stm_standard.png) no-repeat 50% 50%;
 }
-section.numbers {
+body.index section.numbers {
   padding-top: 54px;
   padding-bottom: 69px;
   background: url(../img/bg-cubes-gray.png);
 }
-section.numbers .col.digits {
+body.index section.numbers .col.digits {
   color: #2D8FCE;
 }
-section.numbers .col.digits .row:nth-child(1) {
+body.index section.numbers .col.digits .row:nth-child(1) {
   height: 60px;
 }
-section.numbers .col.digits .row:nth-child(2) {
+body.index section.numbers .col.digits .row:nth-child(2) {
   height: 124px;
 }
-section.numbers .col.digits .row:nth-child(3),
-section.numbers .col.digits .row:nth-child(4) {
+body.index section.numbers .col.digits .row:nth-child(3),
+body.index section.numbers .col.digits .row:nth-child(4) {
   height: 127px;
 }
-section.numbers .col.digits .row .num {
+body.index section.numbers .col.digits .row .num {
   font-size: 90px;
   line-height: 65px;
   font-weight: 800;
 }
-section.numbers .col.digits .row .num.pull-ones {
+body.index section.numbers .col.digits .row .num.pull-ones {
   position: relative;
   left: -10px;
 }
-section.numbers .col.digits .row .num.pull-fives {
+body.index section.numbers .col.digits .row .num.pull-fives {
   position: relative;
   left: -5px;
 }
-section.numbers .col.digits .row .descr {
+body.index section.numbers .col.digits .row .descr {
   font-size: 18px;
   line-height: 17px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: .05em;
 }
-section.numbers .col.text .bar {
+body.index section.numbers .col.text .bar {
   margin-bottom: 40px;
   height: 13px;
   background: #2D8FCE;
 }
-section.numbers .col.text h1 {
+body.index section.numbers .col.text h1 {
   margin-top: 40px;
   margin-bottom: 44px;
   font-size: 38px;
@@ -318,42 +367,42 @@ section.numbers .col.text h1 {
   line-height: 40px;
   color: #2D8FCE;
 }
-section.numbers .col.text p {
+body.index section.numbers .col.text p {
   margin-top: 20px;
 }
-section.distributor {
+body.index section.distributor {
   margin-bottom: 364px;
   padding-top: 54px;
   padding-bottom: 87px;
   background: url(../img/bg-cubes-blue.png);
   color: #ffffff;
 }
-section.distributor .col:first-child {
+body.index section.distributor .col:first-child {
   position: relative;
   top: 37px;
   width: 252px;
 }
-section.distributor .col:first-child .logo {
+body.index section.distributor .col:first-child .logo {
   width: 160px;
   height: 75px;
   background: url(../img/logo-distributor.svg);
 }
-section.distributor .col:first-child h3 {
+body.index section.distributor .col:first-child h3 {
   margin-top: 23px;
   font-size: 18px;
   line-height: 1;
   font-weight: 800;
 }
-section.distributor .col:first-child p {
+body.index section.distributor .col:first-child p {
   margin-top: 20px;
 }
-section.distributor .col:first-child p a {
+body.index section.distributor .col:first-child p a {
   color: #ffffff;
 }
-section.distributor .col:last-child {
+body.index section.distributor .col:last-child {
   width: 772px;
 }
-section.distributor .col:last-child h1 {
+body.index section.distributor .col:last-child h1 {
   display: inline-block;
   border-top: 13px solid #fff;
   padding-top: 42px;
@@ -361,10 +410,10 @@ section.distributor .col:last-child h1 {
   font-weight: 700;
   line-height: 40px;
 }
-section.distributor .col:last-child p:first-of-type {
+body.index section.distributor .col:last-child p:first-of-type {
   margin-top: 37px;
 }
-section.distributor .col:last-child p:last-of-type {
+body.index section.distributor .col:last-child p:last-of-type {
   margin-top: 20px;
 }
 body.product section.billboard {
