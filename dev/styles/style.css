@@ -75,7 +75,7 @@ a {
   display: inline-block;
   border: none;
   border-radius: 5px;
-  padding: 16px 27px 14px;
+  padding: 14px 27px 11px;
   background: #2D8FCE;
   color: #fff;
   font: 600 22px / 24px 'Proxima Nova';
@@ -116,7 +116,7 @@ header.page .wrapper .logo {
 header.page .wrapper .right-block {
   position: absolute;
   bottom: 20px;
-  right: 0;
+  right: 25px;
 }
 header.page .wrapper .right-block:before,
 header.page .wrapper .right-block:after {
@@ -144,6 +144,115 @@ header.page .wrapper .right-block ul.nav li a {
   font-size: 19px;
   font-weight: 600;
   color: #000000;
+}
+header.page .wrapper .right-block ul.nav li a:hover {
+  color: #2D8FCE;
+}
+footer.page {
+  padding-top: 34px;
+  background: #162830;
+}
+footer.page .content .col {
+  float: left;
+  width: 512px;
+}
+footer.page .content .col a {
+  display: block;
+  margin-top: 20px;
+  color: rgba(255, 255, 255, 0.7);
+  font: 400 15px / 1 'Proxima Nova';
+}
+footer.page .content .col a:hover {
+  text-decoration: underline;
+}
+footer.page .content .col h2:nth-of-type(2) {
+  margin-top: 30px;
+}
+footer.page .content .col h2 a {
+  margin-top: 0;
+  color: #ffffff;
+  font: 400 18px / 1 'Proxima Nova';
+}
+footer.page .content .col:nth-of-type(1) .logo {
+  width: 160px;
+  height: 30px;
+  margin-top: 0;
+  background: url(../img/logo-footer.svg);
+  opacity: .8;
+}
+footer.page .content .col:nth-of-type(1) .logo:hover {
+  opacity: 1;
+}
+footer.page .content .col:nth-of-type(1) .map {
+  position: relative;
+  margin-top: 18px;
+  line-height: 18px;
+}
+footer.page .content .col:nth-of-type(1) .map:before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 8px;
+  height: 11px;
+  left: -15px;
+  top: 2px;
+  background: url(../img/icon-map-marker.svg) no-repeat;
+}
+footer.page .content .col:nth-of-type(1) .phone {
+  position: relative;
+  margin-top: 18px;
+}
+footer.page .content .col:nth-of-type(1) .phone:before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  left: -18px;
+  top: 2px;
+  background: url(../img/icon-phone.svg) no-repeat;
+}
+footer.page .content .col:nth-of-type(1) .mail {
+  position: relative;
+  margin-top: 18px;
+  letter-spacing: -0.05em;
+}
+footer.page .content .col:nth-of-type(1) .mail:before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 10px;
+  height: 8px;
+  left: -17px;
+  top: 5px;
+  background: url(../img/icon-mail.svg) no-repeat;
+}
+footer.page .content .col:nth-of-type(2) a {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+}
+footer.page .content .col:nth-of-type(2) a:nth-child(1) {
+  margin-top: 46px;
+}
+footer.page .content .col:nth-of-type(2) a:nth-child(2) {
+  margin-top: 14px;
+}
+footer.page .content .col:nth-of-type(2) a:nth-child(3) {
+  margin-top: 13px;
+}
+footer.page .bottom-line {
+  margin-top: 27px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 22px 0;
+  color: #fff;
+  font: 400 15px / 1 'Proxima Nova';
+}
+footer.page .bottom-line .copyright {
+  float: left;
+}
+footer.page .bottom-line .lang {
+  float: right;
 }
 body.index section.billboard {
   padding-top: 54px;
@@ -213,7 +322,7 @@ body.index section.billboard .footer .btn.learn-more {
 body.index section.billboard .footer .product-labels .label {
   position: absolute;
   right: 0;
-  bottom: 16px;
+  bottom: 13px;
   height: 32px;
   opacity: 0;
 }
@@ -371,7 +480,6 @@ body.index section.numbers .col.text p {
   margin-top: 20px;
 }
 body.index section.distributor {
-  margin-bottom: 364px;
   padding-top: 54px;
   padding-bottom: 87px;
   background: url(../img/bg-cubes-blue.png);

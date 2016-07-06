@@ -129,7 +129,7 @@ a {
   display: inline-block;
   border: none;
   border-radius: 5px;
-  padding: 16px 27px 14px;
+  padding: 14px 27px 11px;
   background: @color-blue;
   color: #fff;
   font: 600 22px / 24px 'Proxima Nova';
@@ -177,7 +177,7 @@ header.page {
 
       position: absolute;
       bottom: 20px;
-      right: 0;
+      right: 25px;
 
       .tel {
         text-align: right;
@@ -200,6 +200,10 @@ header.page {
             font-size: 19px;
             font-weight: 600;
             color: #000000;
+
+            &:hover {
+              color: @color-blue;
+            }
           }
         }
       }
@@ -207,6 +211,141 @@ header.page {
   }
 
 
+}
+
+footer.page {
+  padding-top: 34px;
+  background: #162830;
+
+  .content {
+    .col {
+      float: left;
+      width: 512px;
+
+      a {
+        display: block;
+        margin-top: 20px;
+        color: rgba(255, 255, 255, 0.7);
+        font: 400 15px / 1 'Proxima Nova';
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      h2 {
+        &:nth-of-type(2) {
+          margin-top: 30px;
+        }
+
+        a {
+          margin-top: 0;
+          color: rgba(255, 255, 255, 1);
+          font: 400 18px / 1 'Proxima Nova';
+        }
+      }
+    }
+
+    .col:nth-of-type(1) {
+      .logo {
+        width: 160px;
+        height: 30px;
+        margin-top: 0;
+        background: url(../img/logo-footer.svg);
+        opacity: .8;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+
+      .map {
+        position: relative;
+        margin-top: 18px;
+        line-height: 18px;
+
+        &:before {
+          content: "";
+          position: absolute;
+          display: inline-block;
+          width: 8px;
+          height: 11px;
+          left: -15px;
+          top: 2px;
+          background: url(../img/icon-map-marker.svg) no-repeat;
+        }
+      }
+
+      .phone {
+        position: relative;
+        margin-top: 18px;
+
+        &:before {
+          content: "";
+          position: absolute;
+          display: inline-block;
+          width: 11px;
+          height: 11px;
+          left: -18px;
+          top: 2px;
+          background: url(../img/icon-phone.svg) no-repeat;
+        }
+      }
+
+      .mail {
+        position: relative;
+        margin-top: 18px;
+        letter-spacing: -0.05em;
+
+        &:before {
+          content: "";
+          position: absolute;
+          display: inline-block;
+          width: 10px;
+          height: 8px;
+          left: -17px;
+          top: 5px;
+          background: url(../img/icon-mail.svg) no-repeat;
+        }
+      }
+    }
+
+    .col:nth-of-type(2) {
+      a {
+        font-size: 20px;
+        font-weight: 600;
+        color: #ffffff;
+
+        &:nth-child(1) {
+          margin-top: 46px;
+        }
+
+        &:nth-child(2) {
+          margin-top: 14px;
+        }
+
+        &:nth-child(3) {
+          margin-top: 13px;
+        }
+      }
+    }
+  }
+
+  .bottom-line {
+    margin-top: 27px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 22px 0;
+    color: #fff;
+    font: 400 15px / 1 'Proxima Nova';
+
+    .copyright {
+      float: left;
+    }
+
+    .lang {
+      float: right;
+    }
+  }
 }
 
 body.index {
@@ -288,7 +427,7 @@ body.index {
         .label {
           position: absolute;
           right: 0;
-          bottom: 16px;
+          bottom: 13px;
           height: 32px;
           opacity: 0;
 
@@ -493,7 +632,6 @@ body.index {
   }
 
   section.distributor {
-    margin-bottom: 364px;
     padding-top: 54px;
     padding-bottom: 87px;
     background: url(../img/bg-cubes-blue.png);
