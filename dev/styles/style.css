@@ -146,6 +146,7 @@ header.page .wrapper .right-block ul.nav li a {
   color: #000000;
 }
 header.page .wrapper .right-block ul.nav li a:hover {
+  color: #2D8FCE;
   text-decoration: underline;
 }
 section.distributor {
