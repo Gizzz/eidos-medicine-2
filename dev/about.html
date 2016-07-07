@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+	<title>Эйдос-Медицина</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <link rel="icon" href="favicon.ico" /> -->
+
+	<!-- build:css styles/bundle.css -->
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/html5-boilerplate-main.css">
+	<link rel="stylesheet" href="styles/style.css">
+	<!-- endbuild -->
+</head>
+
+<body class="about">
+	<header class="page">
+		<div class="wrapper">
+			<a href="index.html" class="logo"></a>
+			<div class="right-block">
+				<div class="tel">
+					<span class="prefix">+7 (843)</span> 227-40-63
+				</div>
+				<ul class="nav">
+					<li>
+						<a href="product-list.html">
+							Продукция
+						</a>
+					</li>
+					<li>
+						<a href="contacts.html">
+							Контакты
+						</a>
+					</li>
+					<li>
+						<a href="about.html">
+							О Компании
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<main>
+		<section class="map">
+			<div class="map-container">
+				<div class="map-canvas"></div>
+				<div class="layout-wrapper">
+					<div class="layout-outer">
+						<!--<div class="overlay">-->
+							<!--<h1 class="clearfix">-->
+								<!--<div style="float: left">-->
+									<!--Europe:-->
+									<!--<br />-->
+									<!--USA:-->
+								<!--</div>-->
+								<!--<div style="float: left">-->
+									<!--+3 110 341 5927-->
+									<!--<br />-->
+									<!--+1 305 423 7180-->
+								<!--</div>-->
+							<!--</h1>-->
+						<!--</div>-->
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="page">
+		<div class="wrapper">
+			<div class="layout-center">
+				<div class="layout-inner">
+					<div class="content clearfix">
+						<div class="col">
+							<a href="index.html" class="logo"></a>
+							<a class="map">
+								г. Казань ул. Петербургская, д. 50 корпус 23 — офис 33А
+							</a>
+							<a class="phone">
+								+7 (843) 227 40 63
+							</a>
+							<a href="mailto:mail@oooeidos.ru" class="mail">
+								mail@oooeidos.ru
+							</a>
+						</div>
+						<div class="col">
+							<a href="product-list.html">Продукция</a>
+							<a href="contacts.html">Контакты</a>
+							<a href="about.html">О Компании</a>
+						</div>
+					</div>
+					<div class="bottom-line clearfix">
+						<div class="copyright">2016 © </div>
+						<div class="lang">
+							Эйдос—Медицина
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1s-xrRdeHy3xTyghY3Yc4iWxdv0NL5Ig"></script>
+	<script>
+		(function mapInit() {
+			var styles = [{
+				"stylers": [
+					{ "hue": "#ff0000" },
+					{ "saturation": -100 }
+				]
+			}];
+
+			var mapOptions = {
+				styles: styles,
+				center: { lat: 55.781023, lng: 49.1291083 },
+				zoom: 16,
+				//minZoom: 16,
+				//maxZoom: 16,
+				scrollwheel: false,
+				disableDefaultUI: true,
+				draggable: false
+			};
+
+			var mapCanvas = document.querySelector(".map-canvas");
+
+			var map = new google.maps.Map(mapCanvas, mapOptions);
+			var marker = new google.maps.Marker({
+				icon: 'img/map-marker-eidos.png',
+				position: { lat: 55.781023, lng: 49.1291083 },
+				map: map
+			});
+		})();
+	</script>
+</body>
+
+</html>
