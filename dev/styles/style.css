@@ -1055,6 +1055,9 @@ body.about section.about-descr .col.text p {
 body.about section.about-descr:nth-child(1) .image img:nth-child(1) {
   margin-top: 143px;
 }
+body.about section.about-descr:nth-child(2) {
+  padding-top: 0;
+}
 body.about section.about-descr:nth-child(2) .image img {
   margin: auto;
 }
