@@ -1033,38 +1033,11 @@ body.about section.about-descr {
 body.about section.about-descr .col {
   min-height: 1px;
 }
-body.about section.about-descr .col.image {
-  color: #2D8FCE;
+body.about section.about-descr .col.image img {
+  display: block;
 }
-body.about section.about-descr .col.image .row:nth-child(1) {
-  height: 60px;
-}
-body.about section.about-descr .col.image .row:nth-child(2) {
-  height: 124px;
-}
-body.about section.about-descr .col.image .row:nth-child(3),
-body.about section.about-descr .col.image .row:nth-child(4) {
-  height: 127px;
-}
-body.about section.about-descr .col.image .row .num {
-  font-size: 90px;
-  line-height: 65px;
-  font-weight: 800;
-}
-body.about section.about-descr .col.image .row .num.pull-ones {
-  position: relative;
-  left: -10px;
-}
-body.about section.about-descr .col.image .row .num.pull-fives {
-  position: relative;
-  left: -5px;
-}
-body.about section.about-descr .col.image .row .descr {
-  font-size: 18px;
-  line-height: 17px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: .05em;
+body.about section.about-descr .col.image img:nth-child(1) {
+  margin-top: 143px;
 }
 body.about section.about-descr .col.text .bar {
   margin-bottom: 40px;
