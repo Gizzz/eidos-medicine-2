@@ -1036,9 +1036,6 @@ body.about section.about-descr .col {
 body.about section.about-descr .col.image img {
   display: block;
 }
-body.about section.about-descr .col.image img:nth-child(1) {
-  margin-top: 143px;
-}
 body.about section.about-descr .col.text .bar {
   margin-bottom: 40px;
   height: 13px;
@@ -1054,6 +1051,15 @@ body.about section.about-descr .col.text h1 {
 }
 body.about section.about-descr .col.text p {
   margin-top: 20px;
+}
+body.about section.about-descr:nth-child(1) .image img:nth-child(1) {
+  margin-top: 143px;
+}
+body.about section.about-descr:nth-child(2) .image img {
+  margin: auto;
+}
+body.about section.about-descr:nth-child(2) .image img:nth-child(2) {
+  margin-top: 39px;
 }
 body.about section.experts {
   padding-top: 110px;

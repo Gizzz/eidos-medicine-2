@@ -1566,9 +1566,9 @@ body.about {
       img {
         display: block;
 
-        &:nth-child(1) {
-          margin-top: 143px;
-        }
+        //&:nth-child(1) {
+        //  margin-top: 143px;
+        //}
       }
     }
 
@@ -1590,6 +1590,26 @@ body.about {
 
       p {
         margin-top: 20px;
+      }
+    }
+
+    &:nth-child(1) {
+      .image {
+        img:nth-child(1) {
+          margin-top: 143px;
+        }
+      }
+    }
+
+    &:nth-child(2) {
+      .image {
+        img {
+          margin: auto;
+
+          &:nth-child(2) {
+            margin-top: 39px;
+          }
+        }
       }
     }
   }
