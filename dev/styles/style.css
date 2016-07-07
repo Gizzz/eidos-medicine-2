@@ -202,11 +202,14 @@ section.distributor .col:last-child p:last-of-type {
 }
 footer.page {
   padding-top: 34px;
-  background: #162830;
+  background: #243e50;
 }
 footer.page .content .col {
   float: left;
   width: 512px;
+}
+footer.page .content .col:nth-child(1) {
+  width: 252px;
 }
 footer.page .content .col a {
   display: block;
