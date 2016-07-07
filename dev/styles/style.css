@@ -1025,18 +1025,6 @@ body.product.ran section.product-versions .row .col.version.main .image {
   width: 1024px;
   background: url(../img/ran_main.png) no-repeat 50% 50%;
 }
-body.about section.map {
-  position: relative;
-  background: #ccc;
-}
-body.about section.map .map-container {
-  position: relative;
-}
-body.about section.map .map-container .map-canvas {
-  /* 100vh - header_height - footer_height  */
-  /*height: calc(~"100vh - 142px - 350px");*/
-  height: 400px;
-}
 body.about section.about-descr {
   padding-top: 54px;
   padding-bottom: 69px;
@@ -1135,4 +1123,16 @@ body.about section.experts .row .col.text p {
 }
 body.about section.experts .row:nth-child(2) .col.text {
   margin-top: 55px;
+}
+body.contacts section.map {
+  position: relative;
+  background: #ccc;
+}
+body.contacts section.map .map-container {
+  position: relative;
+}
+body.contacts section.map .map-container .map-canvas {
+  /* 100vh - header_height - footer_height  */
+  /*height: calc(~"100vh - 142px - 350px");*/
+  height: 400px;
 }

@@ -44,29 +44,6 @@
 		</div>
 	</header>
 	<main>
-		<section class="map">
-			<div class="map-container">
-				<div class="map-canvas"></div>
-				<div class="layout-wrapper">
-					<div class="layout-outer">
-						<!--<div class="overlay">-->
-							<!--<h1 class="clearfix">-->
-								<!--<div style="float: left">-->
-									<!--Europe:-->
-									<!--<br />-->
-									<!--USA:-->
-								<!--</div>-->
-								<!--<div style="float: left">-->
-									<!--+3 110 341 5927-->
-									<!--<br />-->
-									<!--+1 305 423 7180-->
-								<!--</div>-->
-							<!--</h1>-->
-						<!--</div>-->
-					</div>
-				</div>
-			</div>
-		</section>
 		<section class="about-descr">
 			<div class="wrapper">
 				<div class="row">
@@ -181,38 +158,6 @@
 			</div>
 		</div>
 	</footer>
-
-	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1s-xrRdeHy3xTyghY3Yc4iWxdv0NL5Ig"></script>
-	<script>
-		(function mapInit() {
-			var styles = [{
-				"stylers": [
-					{ "hue": "#ff0000" },
-					{ "saturation": -100 }
-				]
-			}];
-
-			var mapOptions = {
-				styles: styles,
-				center: { lat: 55.780990, lng: 49.131769 },
-				zoom: 17,
-				//minZoom: 16,
-				//maxZoom: 16,
-				scrollwheel: false,
-				disableDefaultUI: true,
-				draggable: false
-			};
-
-			var mapCanvas = document.querySelector(".map-canvas");
-
-			var map = new google.maps.Map(mapCanvas, mapOptions);
-			var marker = new google.maps.Marker({
-				icon: 'img/map-marker-eidos.png',
-				position: { lat: 55.781096, lng: 49.131765 },
-				map: map
-			});
-		})();
-	</script>
 </body>
 
 </html>
