@@ -23,6 +23,12 @@ html {
 @font-face {
   font-family: 'Proxima Nova';
   font-style: normal;
+  font-weight: 300;
+  src: url(../fonts/Proxima-Nova-Light.woff) format('woff');
+}
+@font-face {
+  font-family: 'Proxima Nova';
+  font-style: normal;
   font-weight: 400;
   src: url(../fonts/Proxima-Nova-Regular.woff) format('woff');
 }
@@ -1087,4 +1093,46 @@ body.about section.about-descr .col.text h1 {
 }
 body.about section.about-descr .col.text p {
   margin-top: 20px;
+}
+body.about section.experts {
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+body.about section.experts .row:not(:first-child) {
+  margin-top: 95px;
+}
+body.about section.experts .row .col.image {
+  width: 400px;
+  text-align: center;
+}
+body.about section.experts .row .col.image .pic {
+  margin: auto;
+  width: 194px;
+  height: 194px;
+}
+body.about section.experts .row .col.image h3 {
+  margin-top: 23px;
+  font-size: 18px;
+}
+body.about section.experts .row .col.image p {
+  font-size: 18px;
+  line-height: 22px;
+}
+body.about section.experts .row:nth-child(1) .col.image .pic {
+  background: url(../img/about_expert-1.png) no-repeat 50% 50%;
+}
+body.about section.experts .row:nth-child(2) .col.image .pic {
+  background: url(../img/about_expert-2.png) no-repeat 50% 50%;
+}
+body.about section.experts .row .col.text {
+  width: 624px;
+}
+body.about section.experts .row .col.text p {
+  font-size: 22px;
+  line-height: 29px;
+  font-weight: 300;
+  font-style: italic;
+}
+body.about section.experts .row:nth-child(2) .col.text {
+  margin-top: 55px;
 }
