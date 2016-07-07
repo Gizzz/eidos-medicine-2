@@ -19,6 +19,7 @@
 <header class="page">
 	<div class="wrapper">
 		<a href="index.html" class="logo"></a>
+
 		<div class="right-block">
 			<div class="tel">
 				<span class="prefix">+7 (843)</span> 227-40-63
@@ -67,6 +68,46 @@
 			</div>
 		</div>
 	</section>
+	<section class="contacts-descr">
+		<div class="wrapper">
+			<div class="row">
+				<div class="col text">
+					<div class="bar"></div>
+					<h1>
+						Контакты
+					</h1>
+					<p>
+						ООО «Эйдос - Медицина»
+					</p>
+					<p>
+						Общество с ограниченной ответственностью "Эйдос - Медицина"
+						ИНН/КПП 1655241023/165501001
+						ОГРН 1121690020462
+						Дата регистрации 19.03.2012
+					</p>
+					<p>
+						Банковские реквизиты:
+						Р/С 40702810945510000089
+						КФ ОАО «АК БАРС» БАНК ДО «Петербургская №11»
+						К/С 30101810000000000805 БИК 049205805
+					</p>
+					<p>
+						Юридический адрес организации:
+						420107, Республика Татарстан, г.Казань, ул. Петербургская, д.50 корп. 23 оф.33
+						Почтовый адрес организации:
+						420107, Республика Татарстан, г.Казань, ул. Петербургская, д.50 оф. 310
+					</p>
+					<p>
+						Генеральный директор Валеев Ленар Наилевич
+						Действует на основании Устава
+					</p>
+				</div>
+				<div class="col image">
+
+				</div>
+			</div>
+		</div>
+	</section>
 </main>
 <footer class="page">
 	<div class="wrapper">
@@ -92,7 +133,7 @@
 					</div>
 				</div>
 				<div class="bottom-line clearfix">
-					<div class="copyright">2016 © </div>
+					<div class="copyright">2016 ©</div>
 					<div class="lang">
 						Эйдос—Медицина
 					</div>
@@ -102,19 +143,20 @@
 	</div>
 </footer>
 
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1s-xrRdeHy3xTyghY3Yc4iWxdv0NL5Ig"></script>
+<script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1s-xrRdeHy3xTyghY3Yc4iWxdv0NL5Ig"></script>
 <script>
 	(function mapInit() {
 		var styles = [{
 			"stylers": [
-				{ "hue": "#ff0000" },
-				{ "saturation": -100 }
+				{"hue": "#ff0000"},
+				{"saturation": -100}
 			]
 		}];
 
 		var mapOptions = {
 			styles: styles,
-			center: { lat: 55.780990, lng: 49.131769 },
+			center: {lat: 55.780990, lng: 49.131769},
 			zoom: 17,
 			//minZoom: 16,
 			//maxZoom: 16,
@@ -128,7 +170,7 @@
 		var map = new google.maps.Map(mapCanvas, mapOptions);
 		var marker = new google.maps.Marker({
 			icon: 'img/map-marker-eidos.png',
-			position: { lat: 55.781096, lng: 49.131765 },
+			position: {lat: 55.781096, lng: 49.131765},
 			map: map
 		});
 	})();
