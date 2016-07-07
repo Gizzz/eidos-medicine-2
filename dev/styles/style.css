@@ -1144,38 +1144,9 @@ body.contacts section.contacts-descr {
 body.contacts section.contacts-descr .col {
   min-height: 1px;
 }
-body.contacts section.contacts-descr .col.image {
-  color: #2D8FCE;
-}
-body.contacts section.contacts-descr .col.image .row:nth-child(1) {
-  height: 60px;
-}
-body.contacts section.contacts-descr .col.image .row:nth-child(2) {
-  height: 124px;
-}
-body.contacts section.contacts-descr .col.image .row:nth-child(3),
-body.contacts section.contacts-descr .col.image .row:nth-child(4) {
-  height: 127px;
-}
-body.contacts section.contacts-descr .col.image .row .num {
-  font-size: 90px;
-  line-height: 65px;
-  font-weight: 800;
-}
-body.contacts section.contacts-descr .col.image .row .num.pull-ones {
+body.contacts section.contacts-descr .col.image img {
   position: relative;
-  left: -10px;
-}
-body.contacts section.contacts-descr .col.image .row .num.pull-fives {
-  position: relative;
-  left: -5px;
-}
-body.contacts section.contacts-descr .col.image .row .descr {
-  font-size: 18px;
-  line-height: 17px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: .05em;
+  margin-top: 141px;
 }
 body.contacts section.contacts-descr .col.text .bar {
   margin-bottom: 40px;
