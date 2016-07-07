@@ -622,76 +622,74 @@ body.index {
   }
 
   section.numbers {
-    padding-top: 54px;
-    padding-bottom: 69px;
-    background: url(../img/bg-cubes-gray.png);
+     padding-top: 54px;
+     padding-bottom: 69px;
+     background: url(../img/bg-cubes-gray.png);
 
-    .col.digits {
-      color: @color-blue;
+     .col.digits {
+       color: @color-blue;
 
-      .row {
-        &:nth-child(1) {
-          height: 60px;
-        }
+       .row {
+         &:nth-child(1) {
+           height: 60px;
+         }
 
-        &:nth-child(2) {
-          height: 124px;
-        }
+         &:nth-child(2) {
+           height: 124px;
+         }
 
-        &:nth-child(3),
-        &:nth-child(4) {
-          height: 127px;
-        }
+         &:nth-child(3),
+         &:nth-child(4) {
+           height: 127px;
+         }
 
-        .num {
-          font-size: 90px;
-          line-height: 65px;
-          font-weight: 800;
+         .num {
+           font-size: 90px;
+           line-height: 65px;
+           font-weight: 800;
 
-          &.pull-ones {
-            position: relative;
-            left: -10px;
-          }
+           &.pull-ones {
+             position: relative;
+             left: -10px;
+           }
 
-          &.pull-fives {
-            position: relative;
-            left: -5px;
-          }
-        }
+           &.pull-fives {
+             position: relative;
+             left: -5px;
+           }
+         }
 
-        .descr {
-          font-size: 18px;
-          line-height: 17px;
-          font-weight: 600;
-          text-transform: uppercase;
-          letter-spacing: .05em;
-        }
-      }
-    }
+         .descr {
+           font-size: 18px;
+           line-height: 17px;
+           font-weight: 600;
+           text-transform: uppercase;
+           letter-spacing: .05em;
+         }
+       }
+     }
 
-    .col.text {
-      .bar {
-        margin-bottom: 40px;
-        height: 13px;
-        background: @color-blue;
-      }
+     .col.text {
+       .bar {
+         margin-bottom: 40px;
+         height: 13px;
+         background: @color-blue;
+       }
 
-      h1 {
-        margin-top: 40px;
-        margin-bottom: 44px;
-        font-size: 38px;
-        font-weight: 700;
-        line-height: 40px;
-        color: @color-blue;
-      }
+       h1 {
+         margin-top: 40px;
+         margin-bottom: 44px;
+         font-size: 38px;
+         font-weight: 700;
+         line-height: 40px;
+         color: @color-blue;
+       }
 
-      p {
-        margin-top: 20px;
-      }
-    }
-  }
-
-
+       p {
+         margin-top: 20px;
+       }
+     }
+   }
 }
 
 body.product-list {
@@ -1558,7 +1556,7 @@ body.about {
       .map-canvas {
         /* 100vh - header_height - footer_height  */
         /*height: calc(~"100vh - 142px - 350px");*/
-        height: 610px;
+        height: 400px;
       }
 
       //.overlay {
@@ -1579,6 +1577,80 @@ body.about {
       //    font: 400 1.07rem / 1.28rem @open-sans;
       //  }
       //}
+    }
+  }
+
+  section.about-descr {
+    padding-top: 54px;
+    padding-bottom: 69px;
+    background: url(../img/bg-cubes-gray.png);
+
+    .col {
+      min-height: 1px;
+    }
+
+    .col.image {
+      color: @color-blue;
+
+      .row {
+        &:nth-child(1) {
+          height: 60px;
+        }
+
+        &:nth-child(2) {
+          height: 124px;
+        }
+
+        &:nth-child(3),
+        &:nth-child(4) {
+          height: 127px;
+        }
+
+        .num {
+          font-size: 90px;
+          line-height: 65px;
+          font-weight: 800;
+
+          &.pull-ones {
+            position: relative;
+            left: -10px;
+          }
+
+          &.pull-fives {
+            position: relative;
+            left: -5px;
+          }
+        }
+
+        .descr {
+          font-size: 18px;
+          line-height: 17px;
+          font-weight: 600;
+          text-transform: uppercase;
+          letter-spacing: .05em;
+        }
+      }
+    }
+
+    .col.text {
+      .bar {
+        margin-bottom: 40px;
+        height: 13px;
+        background: @color-blue;
+      }
+
+      h1 {
+        margin-top: 40px;
+        margin-bottom: 44px;
+        font-size: 38px;
+        font-weight: 700;
+        line-height: 40px;
+        color: @color-blue;
+      }
+
+      p {
+        margin-top: 20px;
+      }
     }
   }
 }
