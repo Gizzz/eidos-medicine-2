@@ -1146,6 +1146,8 @@ body.contacts section.contacts-descr .col {
 }
 body.contacts section.contacts-descr .col.image img {
   position: relative;
+  width: 462px;
+  height: auto;
   margin-top: 141px;
 }
 body.contacts section.contacts-descr .col.text .bar {
