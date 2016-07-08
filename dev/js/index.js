@@ -49,13 +49,9 @@ function initSlider() {
 	setInterval(updateSlider, animationInterval);
 }
 
-//window.onload = function () {
-//	initSlider();
-//};
-
-document.addEventListener("DOMContentLoaded", function() {
+window.onload = function () {
 	initSlider();
-});
+};
 
 function initNumbersCounter() {
 	var options = {
