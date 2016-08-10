@@ -21,38 +21,38 @@ html {
   box-sizing: inherit;
 }
 @font-face {
-  font-family: 'Proxima Nova';
+  font-family: 'FiraSans';
   font-style: normal;
   font-weight: 300;
-  src: url(../fonts/Proxima-Nova-Light.woff) format('woff');
+  src: url(../fonts/FiraSans-Light.woff) format('woff');
 }
 @font-face {
-  font-family: 'Proxima Nova';
+  font-family: 'FiraSans';
   font-style: normal;
   font-weight: 400;
-  src: url(../fonts/Proxima-Nova-Regular.woff) format('woff');
+  src: url(../fonts/FiraSans-Regular.woff) format('woff');
 }
 @font-face {
-  font-family: 'Proxima Nova';
+  font-family: 'FiraSans';
   font-style: normal;
   font-weight: 600;
-  src: url(../fonts/Proxima-Nova-Semibold.woff) format('woff');
+  src: url(../fonts/FiraSans-SemiBold.woff) format('woff');
 }
 @font-face {
-  font-family: 'Proxima Nova';
+  font-family: 'FiraSans';
   font-style: normal;
   font-weight: 700;
-  src: url(../fonts/Proxima-Nova-Bold.woff) format('woff');
+  src: url(../fonts/FiraSans-Bold.woff) format('woff');
 }
 @font-face {
-  font-family: 'Proxima Nova';
+  font-family: 'FiraSans';
   font-style: normal;
   font-weight: 800;
-  src: url(../fonts/Proxima-Nova-Extrabold.woff) format('woff');
+  src: url(../fonts/FiraSans-ExtraBold.woff) format('woff');
 }
 body {
   position: relative;
-  font: 400 18px / 22px 'Proxima Nova';
+  font: 400 18px / 22px 'FiraSans';
   color: #4D4D4D;
 }
 a {
@@ -84,7 +84,7 @@ a {
   padding: 14px 27px 11px;
   background: #2D8FCE;
   color: #fff;
-  font: 600 22px / 24px 'Proxima Nova';
+  font: 600 22px / 24px 'FiraSans';
   text-align: center;
   text-transform: uppercase;
 }
@@ -215,7 +215,7 @@ footer.page .content .col a {
   display: block;
   margin-top: 20px;
   color: rgba(255, 255, 255, 0.7);
-  font: 400 15px / 1 'Proxima Nova';
+  font: 400 15px / 1 'FiraSans';
 }
 footer.page .content .col a:hover {
   text-decoration: underline;
@@ -226,7 +226,7 @@ footer.page .content .col h2:nth-of-type(2) {
 footer.page .content .col h2 a {
   margin-top: 0;
   color: #ffffff;
-  font: 400 18px / 1 'Proxima Nova';
+  font: 400 18px / 1 'FiraSans';
 }
 footer.page .content .col:nth-of-type(1) .logo {
   width: 160px;
@@ -305,7 +305,7 @@ footer.page .bottom-line {
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   padding: 22px 0;
   color: #fff;
-  font: 400 15px / 1 'Proxima Nova';
+  font: 400 15px / 1 'FiraSans';
 }
 footer.page .bottom-line .copyright {
   float: left;
