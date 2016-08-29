@@ -878,6 +878,15 @@ body.product.evs section.modules .row:nth-of-type(2) .col:nth-of-type(2) .module
 body.product.evs section.modules .row:nth-of-type(2) .col:nth-of-type(2) .module:nth-of-type(2) .image {
   background: url(../img/product-evs_learn-module-8.jpg) no-repeat 50% 50%;
 }
+body.product.evs section.modules .row:nth-of-type(3) .col:nth-of-type(1) .module:nth-of-type(1) .image {
+  background: url(../img/product-evs_learn-module-9.png) no-repeat 50% 50%;
+}
+body.product.evs section.modules .row:nth-of-type(3) .col:nth-of-type(1) .module:nth-of-type(2) .image {
+  background: url(../img/product-evs_learn-module-10.png) no-repeat 50% 50%;
+}
+body.product.evs section.modules .row:nth-of-type(3) .col:nth-of-type(2) .module:nth-of-type(1) .image {
+  background: url(../img/product-evs_learn-module-11.png) no-repeat 50% 50%;
+}
 body.product.brs section.billboard .col:nth-child(1) .label {
   background: url(../img/label-brs.svg) no-repeat 50% 50%;
   background-size: 485px 110px;
